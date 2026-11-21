@@ -33,6 +33,8 @@ widget:
 
 *Speculating on future plant species in Michigan's Upper Peninsula as the climate shifts.*
 
+**Project page:** [https://pal-studio-ishan.github.io/arch507-this-dataset-does-not-exist/students/riley-montgomery/](https://pal-studio-ishan.github.io/arch507-this-dataset-does-not-exist/students/riley-montgomery/) · all projects: [course site](https://pal-studio-ishan.github.io/arch507-this-dataset-does-not-exist/)
+
 This LoRA comes from the assignment **This Dataset Does Not Exist**. Each student built and captioned their own dataset to insert a new bias into FLUX.1 [dev]: something the base model couldn't make with enough force or specificity.
 
 > The training images weren't handed in with the LoRAs.

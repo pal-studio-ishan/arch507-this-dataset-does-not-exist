@@ -6,7 +6,8 @@ Writes data/downloads.json so the site's Download buttons point at the files.
 
   python -I tools/upload_hf.py --dry-run     write model cards to data/hf_cards/ only
   python -I tools/upload_hf.py               create/update repos and upload
-  python -I tools/upload_hf.py --public      make every repo public
+  python -I tools/upload_hf.py --cards       update the model cards (README.md) only
+  python -I tools/upload_hf.py --public      make every repo and the collection public
 Needs a one-time `hf auth login` with a write token.
 """
 import io, json, sys
@@ -90,6 +91,8 @@ def card(meta, slug, files, examples):
 
 *{meta.get('tagline', '')}*
 
+**Project page:** [{SITE}students/{slug}/]({SITE}students/{slug}/) · all projects: [course site]({SITE})
+
 This LoRA comes from the assignment **This Dataset Does Not Exist**. Each student built and captioned their own dataset to insert a new bias into FLUX.1 [dev]: something the base model couldn't make with enough force or specificity.
 {note}
 {meta['body'].strip()}
@@ -121,6 +124,7 @@ LoRA by {meta['name']}, made for ARCH 507 at Taubman College, University of Mich
 def main():
     dry = "--dry-run" in sys.argv
     make_public = "--public" in sys.argv
+    cards_only = "--cards" in sys.argv
     downloads, repos = {}, []
     if not dry:
         from huggingface_hub import HfApi, CommitOperationAdd
@@ -151,6 +155,11 @@ def main():
             api.update_repo_settings(rid, private=False)
             print("public:", rid, flush=True)
             continue
+        if cards_only:
+            api.upload_file(path_or_fileobj=text.encode("utf-8"), path_in_repo="README.md", repo_id=rid,
+                            commit_message="Link the model card to the course site")
+            print("card:", rid, flush=True)
+            continue
         api.create_repo(rid, repo_type="model", private=True, exist_ok=True)
         ops = [CommitOperationAdd("README.md", io.BytesIO(text.encode("utf-8")))]
         ops += [CommitOperationAdd(f"images/{e}", str(ROOT / "assets" / slug / "final" / e.replace(".jpg", "_t.jpg"))) for e in examples]
@@ -158,7 +167,12 @@ def main():
         api.create_commit(rid, operations=ops, commit_message="Add LoRA, model card and example images")
         print("uploaded:", rid, flush=True)
     (ROOT / "data" / "downloads.json").write_text(json.dumps(downloads, indent=1), "utf-8")
-    if not dry and not make_public:
+    if make_public:
+        for c in api.list_collections(owner=USER):
+            if c.title == COLLECTION_TITLE:
+                api.update_collection_metadata(c.slug, private=False)
+                print("public collection:", c.slug)
+    if not dry and not make_public and not cards_only:
         coll = next((c for c in api.list_collections(owner=USER) if c.title == COLLECTION_TITLE), None)
         if coll is None:
             coll = api.create_collection(COLLECTION_TITLE, description="Student LoRAs from ARCH 507 (Winter 2026), Taubman College, University of Michigan.", private=True)

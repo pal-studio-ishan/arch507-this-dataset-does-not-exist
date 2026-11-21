@@ -33,6 +33,8 @@ widget:
 
 *Rwanda's volcanic stone, a material the base model reduces to a hut, carried into contemporary form.*
 
+**Project page:** [https://pal-studio-ishan.github.io/arch507-this-dataset-does-not-exist/students/ravi-kumar/](https://pal-studio-ishan.github.io/arch507-this-dataset-does-not-exist/students/ravi-kumar/) · all projects: [course site](https://pal-studio-ishan.github.io/arch507-this-dataset-does-not-exist/)
+
 This LoRA comes from the assignment **This Dataset Does Not Exist**. Each student built and captioned their own dataset to insert a new bias into FLUX.1 [dev]: something the base model couldn't make with enough force or specificity.
 
 > The volcanic stone dataset wasn't handed in; the stone LoRA itself is included.

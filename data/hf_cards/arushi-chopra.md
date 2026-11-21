@@ -32,6 +32,8 @@ widget:
 
 *A LoRA for traditional bamboo joinery: lashing, dowels and culm bundles across vernaculars.*
 
+**Project page:** [https://pal-studio-ishan.github.io/arch507-this-dataset-does-not-exist/students/arushi-chopra/](https://pal-studio-ishan.github.io/arch507-this-dataset-does-not-exist/students/arushi-chopra/) · all projects: [course site](https://pal-studio-ishan.github.io/arch507-this-dataset-does-not-exist/)
+
 This LoRA comes from the assignment **This Dataset Does Not Exist**. Each student built and captioned their own dataset to insert a new bias into FLUX.1 [dev]: something the base model couldn't make with enough force or specificity.
 
 > No written analysis was handed in. This summary comes from the review slides.
