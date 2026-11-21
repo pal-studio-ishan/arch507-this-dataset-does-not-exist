@@ -4,6 +4,8 @@ Student LoRA projects from **ARCH 507 — Generative AI: Thinking and Designing 
 
 Each student found something FLUX.1 [dev] couldn't make, built and captioned a small dataset for it, trained a LoRA, and made a series of images. The site has one page per project: what they tested, what they built, what they found, their final images, their LoRAs and their dataset.
 
+**Site:** https://pal-studio-ishan.github.io/arch507-this-dataset-does-not-exist/ · **LoRAs:** [Hugging Face collection](https://huggingface.co/collections/pal-studio/arch-507-this-dataset-does-not-exist-6b01774374191f228f0122bd)
+
 ## How the repo is organised
 
 ```
