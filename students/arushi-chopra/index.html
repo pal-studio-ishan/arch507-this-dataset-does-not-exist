@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bambu — Arushi Chopra</title>
+<meta name="description" content="A LoRA for traditional bamboo joinery: lashing, dowels and culm bundles across vernaculars.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../site.css">
+</head>
+<body>
+
+<header class="top wrap">
+  <a class="mono small" href="../../">← All projects</a>
+  <nav class="mono small pager"><a href="../angelica-facey/">← Angelica Facey</a><a href="../emily-naumann/">Emily Naumann →</a></nav>
+</header>
+<section class="p-hero wrap">
+  <p class="mono small muted">Arushi Chopra</p>
+  <h1>Bambu</h1>
+  <p class="lede">A LoRA for traditional bamboo joinery: lashing, dowels and culm bundles across vernaculars.</p>
+</section>
+<div class="p-cover wrap"><img src="../../assets/arushi-chopra/final/04.jpg" alt=""></div>
+<section class="p-body wrap">
+  <article class="prose"><p class="note">No written analysis was handed in. This summary comes from the review slides.</p><h2>The question</h2>
+<p>Base models can draw "a bamboo building" but not how bamboo actually goes together: the lashing at a node, a bundle of culms acting as a column, split-culm roof tiles. Arushi collected niche images of real joinery to see if a LoRA could carry those details into new buildings.</p>
+<h2>What they did</h2>
+<ul>
+<li>Built a dataset of bamboo joinery photographs from practices known for bamboo, with captions describing each joint in detail.</li>
+<li>Trained two LoRAs and compared each prompt with and without them.</li>
+<li>Made a series called <em>Culm</em>, moving through regional traditions: Latin American, Vietnamese, Javanese, Filipino, Indian and Japanese. Many prompts asked for black-and-white film photography (Ilford, Tri-X, Neopan).</li>
+<li>In the last images Arushi used both LoRAs together (2.0 and 1.0) with very short prompts, to see how much the LoRAs carried on their own.</li>
+</ul>
+<h2>What the tests looked at</h2>
+<ul>
+<li>Whether natural patterns such as woven screens and shadows come through.</li>
+<li>Whether lashing and structural logic hold up in new building types: bridges, market halls, porches, tea houses.</li>
+<li>How far the bamboo details survive when the prompt gives almost no detail.</li>
+</ul></article>
+  <aside><dl class="glance">
+  <div><dt>LoRAs</dt><dd>2</dd></div>
+  <div><dt>Base model</dt><dd>FLUX.1 [dev]</dd></div>
+  <div><dt>Trigger words</dt><dd><span class="muted">none</span></dd></div>
+  <div><dt>Final images</dt><dd>12</dd></div>
+</dl></aside>
+</section>
+<section class="block wrap"><h2 class="section-label mono">Final images</h2><div class="gallery"><a class="g-item" href="../../assets/arushi-chopra/final/01.jpg" data-w="1920" data-h="1088"><img src="../../assets/arushi-chopra/final/01_t.jpg" alt="Bambu, image 1" loading="lazy" width="1920" height="1088"></a><a class="g-item" href="../../assets/arushi-chopra/final/02.jpg" data-w="1920" data-h="1088"><img src="../../assets/arushi-chopra/final/02_t.jpg" alt="Bambu, image 2" loading="lazy" width="1920" height="1088"></a><a class="g-item" href="../../assets/arushi-chopra/final/03.jpg" data-w="1920" data-h="1088"><img src="../../assets/arushi-chopra/final/03_t.jpg" alt="Bambu, image 3" loading="lazy" width="1920" height="1088"></a><a class="g-item" href="../../assets/arushi-chopra/final/04.jpg" data-w="1920" data-h="1088"><img src="../../assets/arushi-chopra/final/04_t.jpg" alt="Bambu, image 4" loading="lazy" width="1920" height="1088"></a><a class="g-item" href="../../assets/arushi-chopra/final/05.jpg" data-w="1920" data-h="1088"><img src="../../assets/arushi-chopra/final/05_t.jpg" alt="Bambu, image 5" loading="lazy" width="1920" height="1088"></a><a class="g-item" href="../../assets/arushi-chopra/final/06.jpg" data-w="1920" data-h="1088"><img src="../../assets/arushi-chopra/final/06_t.jpg" alt="Bambu, image 6" loading="lazy" width="1920" height="1088"></a><a class="g-item" href="../../assets/arushi-chopra/final/07.jpg" data-w="1920" data-h="1088"><img src="../../assets/arushi-chopra/final/07_t.jpg" alt="Bambu, image 7" loading="lazy" width="1920" height="1088"></a><a class="g-item" href="../../assets/arushi-chopra/final/08.jpg" data-w="1920" data-h="1088"><img src="../../assets/arushi-chopra/final/08_t.jpg" alt="Bambu, image 8" loading="lazy" width="1920" height="1088"></a><a class="g-item" href="../../assets/arushi-chopra/final/09.jpg" data-w="1920" data-h="1088"><img src="../../assets/arushi-chopra/final/09_t.jpg" alt="Bambu, image 9" loading="lazy" width="1920" height="1088"></a><a class="g-item" href="../../assets/arushi-chopra/final/10.jpg" data-w="1920" data-h="1088"><img src="../../assets/arushi-chopra/final/10_t.jpg" alt="Bambu, image 10" loading="lazy" width="1920" height="1088"></a><a class="g-item" href="../../assets/arushi-chopra/final/11.jpg" data-w="1920" data-h="1088"><img src="../../assets/arushi-chopra/final/11_t.jpg" alt="Bambu, image 11" loading="lazy" width="1920" height="1088"></a><a class="g-item" href="../../assets/arushi-chopra/final/12.jpg" data-w="1920" data-h="1088"><img src="../../assets/arushi-chopra/final/12_t.jpg" alt="Bambu, image 12" loading="lazy" width="1920" height="1088"></a></div></section>
+<div class="wrap"><section class="block"><h2 class="section-label mono">LoRAs</h2><div class="loras"><div class="lora">
+  <div class="lora-head"><h3 class="mono">borsch_t</h3><span class="btn btn-off">Download soon</span></div>
+  <dl>
+    <div><dt>Trained on</dt><dd>Bamboo architecture (one of two LoRAs)</dd></div>
+    <div><dt>Trigger</dt><dd><span class="muted">none</span></dd></div>
+    <div><dt>Strength used</dt><dd>1.25–2.0</dd></div>
+    <div><dt>File</dt><dd class="mono small break">borsch_t.safetensors</dd></div>
+  </dl>
+</div><div class="lora">
+  <div class="lora-head"><h3 class="mono">too_late</h3><span class="btn btn-off">Download soon</span></div>
+  <dl>
+    <div><dt>Trained on</dt><dd>Bamboo architecture (one of two LoRAs)</dd></div>
+    <div><dt>Trigger</dt><dd><span class="muted">none</span></dd></div>
+    <div><dt>Strength used</dt><dd>1.0–1.75</dd></div>
+    <div><dt>File</dt><dd class="mono small break">too_late_pytorch_lora_weights.safetensors</dd></div>
+  </dl>
+</div></div></section><section class="block"><h2 class="section-label mono">Dataset</h2><div class="dataset">
+  <p>35 photographs of architectural bamboo joinery: lashing and dowel details, roofs, columns, beams and stairs (sources: Guadua Bamboo, Bamboo Batu, Bamboo U, VTN Architects)</p>
+  <p class="muted small">Detailed captions naming the joint, the culm size, the lashing and the regional tradition</p>
+  <div class="thumbs"><img src="../../assets/arushi-chopra/bamboo/01.jpg" alt="" loading="lazy"><img src="../../assets/arushi-chopra/bamboo/02.jpg" alt="" loading="lazy"><img src="../../assets/arushi-chopra/bamboo/03.jpg" alt="" loading="lazy"><img src="../../assets/arushi-chopra/bamboo/04.jpg" alt="" loading="lazy"><img src="../../assets/arushi-chopra/bamboo/05.jpg" alt="" loading="lazy"><img src="../../assets/arushi-chopra/bamboo/06.jpg" alt="" loading="lazy"><img src="../../assets/arushi-chopra/bamboo/07.jpg" alt="" loading="lazy"><img src="../../assets/arushi-chopra/bamboo/08.jpg" alt="" loading="lazy"><img src="../../assets/arushi-chopra/bamboo/09.jpg" alt="" loading="lazy"><img src="../../assets/arushi-chopra/bamboo/10.jpg" alt="" loading="lazy"><img src="../../assets/arushi-chopra/bamboo/11.jpg" alt="" loading="lazy"><img src="../../assets/arushi-chopra/bamboo/12.jpg" alt="" loading="lazy"></div>
+  <blockquote>An interior ceiling view upshot of bamboo bundle structural joint with multi-culm lashed assembly, creating a radial fan truss system with diagonal crossing bundles. Dark cured aged culms are used with natural fiber lashing at nodes. Southeast Asian vernacular traditional bamboo joinery.</blockquote><blockquote>bamboo column-to-beam joint with bundled culms to create a vertical column with multiple horizontal purlins intersecting it at right-angles at different, evenly-spaced heights. Metal wire lashing at connection points. The joint uses aged amber-toned culms for orthogonal framing. Southeast Asian vernacular traditional bamboo joinery.</blockquote>
+  <a class="small" href="../../assets/arushi-chopra/bamboo-captions.txt">All 35 captions (.txt)</a>
+</div></section><section class="block"><h2 class="section-label mono">Try it</h2><div class="prompt"><p class="mono small">Cinematic architecture magazine photograph of a bamboo sleeping pavilion interior in a Vietnamese vernacular using traditional multi-culm bundle columns with dark coir lashing… Film photograph shot on Ilford HP5 black and white film — LoRA 1.25, guidance 4.0</p><button class="copy mono small" type="button">Copy</button></div></section></div>
+<nav class="wrap pager-bottom mono small"><a href="../angelica-facey/">← Memory</a><a href="../emily-naumann/">le_zine →</a></nav>
+<footer class="foot wrap">
+  <div>ARCH 507 — Generative AI: Thinking and Designing with Machine Intelligence<br>University of Michigan, Taubman College of Architecture and Urban Planning · Winter 2026</div>
+  <div>Instructor: Ishan Pal Singh</div>
+  <div class="foot-note">Student work shared for education and research. LoRAs are free for non-commercial use with credit to the student. Datasets built from other people's images are shown as captions and small thumbnails only.</div>
+</footer>
+<script src="../../site.js"></script>
+</body>
+</html>

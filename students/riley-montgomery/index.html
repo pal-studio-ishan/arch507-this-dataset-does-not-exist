@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Upper Peninsula Understory Futures — Riley Montgomery</title>
+<meta name="description" content="Speculating on future plant species in Michigan&#x27;s Upper Peninsula as the climate shifts.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../site.css">
+</head>
+<body>
+
+<header class="top wrap">
+  <a class="mono small" href="../../">← All projects</a>
+  <nav class="mono small pager"><a href="../ravi-kumar/">← Ravi Kumar</a><a href="../shuyang-zhang/">Shuyang (Jesseco) Zhang →</a></nav>
+</header>
+<section class="p-hero wrap">
+  <p class="mono small muted">Riley Montgomery</p>
+  <h1>Upper Peninsula Understory Futures</h1>
+  <p class="lede">Speculating on future plant species in Michigan&#x27;s Upper Peninsula as the climate shifts.</p>
+</section>
+<div class="p-cover wrap"><img src="../../assets/riley-montgomery/final/05.jpg" alt=""></div>
+<section class="p-body wrap">
+  <article class="prose"><p class="note">The training images weren't handed in with the LoRAs.</p><h2>The question</h2>
+<p>Image models know little about less common species, especially in remote places like the Keweenaw Peninsula. Riley wanted to train a model on Upper Peninsula plants and then speculate on how climate change might reshape them. Understory plants hybridise and migrate faster, and hardiness zones are expected to shift about 13 miles a decade.</p>
+<h2>What they did</h2>
+<ul>
+<li><strong>mont2:</strong> 24 images of 12 species. Six were native, from Michigan State University's list, and six currently grow two hardiness zones warmer. Every caption followed the same botanical format: view, scientific and common name, native range, height, flowers, leaves, roots, pollinators, soil.</li>
+<li><strong>lkjh:</strong> narrowed to a single plant, the lowbush blueberry, with captions from Midjourney's describe tool.</li>
+<li><strong>mont3:</strong> a LoRA trained on plastic objects, combined with the blueberry LoRA to imagine plastic-hybrid future plants.</li>
+</ul>
+<h2>What they found</h2>
+<ul>
+<li>The blueberry LoRA followed the plant closely, but the images offered little more than photographs would.</li>
+<li>The landscapes came out generic and every bush looked the same, because the dataset leaned toward close-ups. Riley's reviewer pointed to scale.</li>
+<li>The plastic hybrids raised a question Riley hadn't set out to ask, about microplastics in plants and soil.</li>
+<li>In hindsight Riley would pick one goal: either faithful depiction of the blueberry (LoRAs by season and scale) or speculative hybrids built from a dataset of made-up hybrids.</li>
+</ul></article>
+  <aside><dl class="glance">
+  <div><dt>LoRAs</dt><dd>3</dd></div>
+  <div><dt>Base model</dt><dd>FLUX.1 [dev]</dd></div>
+  <div><dt>Trigger words</dt><dd><code>mont2</code>, <code>lkjh</code>, <code>mont3</code></dd></div>
+  <div><dt>Final images</dt><dd>18</dd></div>
+</dl></aside>
+</section>
+<section class="block wrap"><h2 class="section-label mono">Final images</h2><div class="gallery"><a class="g-item" href="../../assets/riley-montgomery/final/01.jpg" data-w="608" data-h="608"><img src="../../assets/riley-montgomery/final/01_t.jpg" alt="Upper Peninsula Understory Futures, image 1" loading="lazy" width="608" height="608"></a><a class="g-item" href="../../assets/riley-montgomery/final/02.jpg" data-w="608" data-h="608"><img src="../../assets/riley-montgomery/final/02_t.jpg" alt="Upper Peninsula Understory Futures, image 2" loading="lazy" width="608" height="608"></a><a class="g-item" href="../../assets/riley-montgomery/final/03.jpg" data-w="1024" data-h="1024"><img src="../../assets/riley-montgomery/final/03_t.jpg" alt="Upper Peninsula Understory Futures, image 3" loading="lazy" width="1024" height="1024"></a><a class="g-item" href="../../assets/riley-montgomery/final/04.jpg" data-w="1024" data-h="1024"><img src="../../assets/riley-montgomery/final/04_t.jpg" alt="Upper Peninsula Understory Futures, image 4" loading="lazy" width="1024" height="1024"></a><a class="g-item" href="../../assets/riley-montgomery/final/05.jpg" data-w="1600" data-h="896"><img src="../../assets/riley-montgomery/final/05_t.jpg" alt="Upper Peninsula Understory Futures, image 5" loading="lazy" width="1600" height="896"></a><a class="g-item" href="../../assets/riley-montgomery/final/06.jpg" data-w="1600" data-h="896"><img src="../../assets/riley-montgomery/final/06_t.jpg" alt="Upper Peninsula Understory Futures, image 6" loading="lazy" width="1600" height="896"></a><a class="g-item" href="../../assets/riley-montgomery/final/07.jpg" data-w="1600" data-h="896"><img src="../../assets/riley-montgomery/final/07_t.jpg" alt="Upper Peninsula Understory Futures, image 7" loading="lazy" width="1600" height="896"></a><a class="g-item" href="../../assets/riley-montgomery/final/08.jpg" data-w="1600" data-h="896"><img src="../../assets/riley-montgomery/final/08_t.jpg" alt="Upper Peninsula Understory Futures, image 8" loading="lazy" width="1600" height="896"></a><a class="g-item" href="../../assets/riley-montgomery/final/09.jpg" data-w="1600" data-h="896"><img src="../../assets/riley-montgomery/final/09_t.jpg" alt="Upper Peninsula Understory Futures, image 9" loading="lazy" width="1600" height="896"></a><a class="g-item" href="../../assets/riley-montgomery/final/10.jpg" data-w="1600" data-h="896"><img src="../../assets/riley-montgomery/final/10_t.jpg" alt="Upper Peninsula Understory Futures, image 10" loading="lazy" width="1600" height="896"></a><a class="g-item" href="../../assets/riley-montgomery/final/11.jpg" data-w="1600" data-h="896"><img src="../../assets/riley-montgomery/final/11_t.jpg" alt="Upper Peninsula Understory Futures, image 11" loading="lazy" width="1600" height="896"></a><a class="g-item" href="../../assets/riley-montgomery/final/12.jpg" data-w="1600" data-h="896"><img src="../../assets/riley-montgomery/final/12_t.jpg" alt="Upper Peninsula Understory Futures, image 12" loading="lazy" width="1600" height="896"></a><a class="g-item" href="../../assets/riley-montgomery/final/13.jpg" data-w="1600" data-h="896"><img src="../../assets/riley-montgomery/final/13_t.jpg" alt="Upper Peninsula Understory Futures, image 13" loading="lazy" width="1600" height="896"></a><a class="g-item" href="../../assets/riley-montgomery/final/14.jpg" data-w="1600" data-h="896"><img src="../../assets/riley-montgomery/final/14_t.jpg" alt="Upper Peninsula Understory Futures, image 14" loading="lazy" width="1600" height="896"></a><a class="g-item" href="../../assets/riley-montgomery/final/15.jpg" data-w="1600" data-h="896"><img src="../../assets/riley-montgomery/final/15_t.jpg" alt="Upper Peninsula Understory Futures, image 15" loading="lazy" width="1600" height="896"></a><a class="g-item" href="../../assets/riley-montgomery/final/16.jpg" data-w="1600" data-h="896"><img src="../../assets/riley-montgomery/final/16_t.jpg" alt="Upper Peninsula Understory Futures, image 16" loading="lazy" width="1600" height="896"></a><a class="g-item" href="../../assets/riley-montgomery/final/17.jpg" data-w="1600" data-h="896"><img src="../../assets/riley-montgomery/final/17_t.jpg" alt="Upper Peninsula Understory Futures, image 17" loading="lazy" width="1600" height="896"></a><a class="g-item" href="../../assets/riley-montgomery/final/18.jpg" data-w="1600" data-h="896"><img src="../../assets/riley-montgomery/final/18_t.jpg" alt="Upper Peninsula Understory Futures, image 18" loading="lazy" width="1600" height="896"></a></div></section>
+<div class="wrap"><section class="block"><h2 class="section-label mono">LoRAs</h2><div class="loras"><div class="lora">
+  <div class="lora-head"><h3 class="mono">mont2</h3><span class="btn btn-off">Download soon</span></div>
+  <dl>
+    <div><dt>Trained on</dt><dd>12 Upper Peninsula plant species: 6 native, 6 expected to arrive</dd></div>
+    <div><dt>Trigger</dt><dd><code>mont2</code></dd></div>
+    <div><dt>Strength used</dt><dd>0.3–1.5</dd></div>
+    <div><dt>File</dt><dd class="mono small break">mont2.safetensors</dd></div>
+  </dl>
+</div><div class="lora">
+  <div class="lora-head"><h3 class="mono">lkjh</h3><span class="btn btn-off">Download soon</span></div>
+  <dl>
+    <div><dt>Trained on</dt><dd>Lowbush blueberry</dd></div>
+    <div><dt>Trigger</dt><dd><code>lkjh</code></dd></div>
+    <div><dt>Strength used</dt><dd>0.3–1.5</dd></div>
+    <div><dt>File</dt><dd class="mono small break">lkjh.safetensors</dd></div>
+  </dl>
+</div><div class="lora">
+  <div class="lora-head"><h3 class="mono">mont3</h3><span class="btn btn-off">Download soon</span></div>
+  <dl>
+    <div><dt>Trained on</dt><dd>Plastic objects</dd></div>
+    <div><dt>Trigger</dt><dd><code>mont3</code></dd></div>
+    <div><dt>Strength used</dt><dd>0.5–1.0</dd></div>
+    <div><dt>File</dt><dd class="mono small break">mont3.safetensors</dd></div>
+  </dl>
+</div></div></section><section class="block"><h2 class="section-label mono">Try it</h2><div class="prompt"><p class="mono small">A close-up of lowbush blueberry plants hybridized with plastic, translucent plastic leaves and plastic berries that refract light, growing in a natural setting… lkjh, mont3 — strengths 0.5 + 1.0</p><button class="copy mono small" type="button">Copy</button></div></section></div>
+<nav class="wrap pager-bottom mono small"><a href="../ravi-kumar/">← Amabuye</a><a href="../shuyang-zhang/">Liturgies of a Lost Future →</a></nav>
+<footer class="foot wrap">
+  <div>ARCH 507 — Generative AI: Thinking and Designing with Machine Intelligence<br>University of Michigan, Taubman College of Architecture and Urban Planning · Winter 2026</div>
+  <div>Instructor: Ishan Pal Singh</div>
+  <div class="foot-note">Student work shared for education and research. LoRAs are free for non-commercial use with credit to the student. Datasets built from other people's images are shown as captions and small thumbnails only.</div>
+</footer>
+<script src="../../site.js"></script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sand — Leo Georges</title>
+<meta name="description" content="Using dune geometry, not sand texture, to bend a facade&#x27;s mullion grid.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../site.css">
+</head>
+<body>
+
+<header class="top wrap">
+  <a class="mono small" href="../../">← All projects</a>
+  <nav class="mono small pager"><a href="../jack-smith/">← Jack Smith</a><a href="../michael-natinsky/">Michael Natinsky →</a></nav>
+</header>
+<section class="p-hero wrap">
+  <p class="mono small muted">Leo Georges</p>
+  <h1>Sand</h1>
+  <p class="lede">Using dune geometry, not sand texture, to bend a facade&#x27;s mullion grid.</p>
+</section>
+<div class="p-cover wrap"><img src="../../assets/leo-georges/final/04.jpg" alt=""></div>
+<section class="p-body wrap">
+  <article class="prose"><h2>The question</h2>
+<p>Base models read landscape as surface: texture, colour, material. When you ask for a building that responds to its site, they bury it in the terrain or carve it out of the rock. Leo wanted to treat landscape as geometry, as a system that could organise a facade.</p>
+<h2>What they did</h2>
+<ul>
+<li>Started with mountains and cliffs, but the images were too noisy. The model latched onto rock texture and colour.</li>
+<li>Switched to sand dunes, whose uniform material isolates pure curvature and flow.</li>
+<li>Built two separate datasets of 25 images: <strong>mullions</strong> (grid, repetition, order) and <strong>dunes</strong> (deformation, continuity). Each image was cropped to remove context and captioned with a Florence-2 workflow and Claude, then edited by hand.</li>
+<li>Trained both LoRAs on fal.ai and combined them in ComfyUI, with the mullions as structure and the dunes as a modifier. The twelve images move through four phases: establish the language, apply it, transform it, and push it to speculation.</li>
+</ul>
+<h2>What they found</h2>
+<ul>
+<li>At first the model collapsed geometry into material. Buildings turned sandy or rose out of the ground, because the LoRA strength was too high (1.2), the data leaned toward sand, and the prompts implied blending.</li>
+<li>Lowering the strength to 0.75, adding more facade examples and writing prompts that kept building and context separate fixed it.</li>
+<li>In the final images the grid stays readable while dune contours deform it. Natural geometry drives the facade without being copied.</li>
+</ul></article>
+  <aside><dl class="glance">
+  <div><dt>LoRAs</dt><dd>2</dd></div>
+  <div><dt>Base model</dt><dd>FLUX.1 [dev]</dd></div>
+  <div><dt>Trigger words</dt><dd><span class="muted">none</span></dd></div>
+  <div><dt>Final images</dt><dd>12</dd></div>
+</dl></aside>
+</section>
+<section class="block wrap"><h2 class="section-label mono">Final images</h2><div class="gallery"><a class="g-item" href="../../assets/leo-georges/final/01.jpg" data-w="1672" data-h="941"><img src="../../assets/leo-georges/final/01_t.jpg" alt="Sand, image 1" loading="lazy" width="1672" height="941"></a><a class="g-item" href="../../assets/leo-georges/final/02.jpg" data-w="1536" data-h="1024"><img src="../../assets/leo-georges/final/02_t.jpg" alt="Sand, image 2" loading="lazy" width="1536" height="1024"></a><a class="g-item" href="../../assets/leo-georges/final/03.jpg" data-w="1536" data-h="1024"><img src="../../assets/leo-georges/final/03_t.jpg" alt="Sand, image 3" loading="lazy" width="1536" height="1024"></a><a class="g-item" href="../../assets/leo-georges/final/04.jpg" data-w="1536" data-h="1024"><img src="../../assets/leo-georges/final/04_t.jpg" alt="Sand, image 4" loading="lazy" width="1536" height="1024"></a><a class="g-item" href="../../assets/leo-georges/final/05.jpg" data-w="1536" data-h="1024"><img src="../../assets/leo-georges/final/05_t.jpg" alt="Sand, image 5" loading="lazy" width="1536" height="1024"></a><a class="g-item" href="../../assets/leo-georges/final/06.jpg" data-w="1536" data-h="1024"><img src="../../assets/leo-georges/final/06_t.jpg" alt="Sand, image 6" loading="lazy" width="1536" height="1024"></a><a class="g-item" href="../../assets/leo-georges/final/07.jpg" data-w="1536" data-h="1024"><img src="../../assets/leo-georges/final/07_t.jpg" alt="Sand, image 7" loading="lazy" width="1536" height="1024"></a><a class="g-item" href="../../assets/leo-georges/final/08.jpg" data-w="1536" data-h="1024"><img src="../../assets/leo-georges/final/08_t.jpg" alt="Sand, image 8" loading="lazy" width="1536" height="1024"></a><a class="g-item" href="../../assets/leo-georges/final/09.jpg" data-w="1536" data-h="1024"><img src="../../assets/leo-georges/final/09_t.jpg" alt="Sand, image 9" loading="lazy" width="1536" height="1024"></a><a class="g-item" href="../../assets/leo-georges/final/10.jpg" data-w="1536" data-h="1024"><img src="../../assets/leo-georges/final/10_t.jpg" alt="Sand, image 10" loading="lazy" width="1536" height="1024"></a><a class="g-item" href="../../assets/leo-georges/final/11.jpg" data-w="1536" data-h="1024"><img src="../../assets/leo-georges/final/11_t.jpg" alt="Sand, image 11" loading="lazy" width="1536" height="1024"></a><a class="g-item" href="../../assets/leo-georges/final/12.jpg" data-w="1536" data-h="1024"><img src="../../assets/leo-georges/final/12_t.jpg" alt="Sand, image 12" loading="lazy" width="1536" height="1024"></a></div></section>
+<div class="wrap"><section class="block"><h2 class="section-label mono">LoRAs</h2><div class="loras"><div class="lora">
+  <div class="lora-head"><h3 class="mono">Mullions</h3><span class="btn btn-off">Download soon</span></div>
+  <dl>
+    <div><dt>Trained on</dt><dd>Window mullion systems: grid, spacing, repetition</dd></div>
+    <div><dt>Trigger</dt><dd><span class="muted">none</span></dd></div>
+    <div><dt>Strength used</dt><dd>0.75</dd></div>
+    <div><dt>File</dt><dd class="mono small break">sandmolean_pytorch_lora_weights.safetensors</dd></div>
+  </dl>
+</div><div class="lora">
+  <div class="lora-head"><h3 class="mono">Dunes</h3><span class="btn btn-off">Download soon</span></div>
+  <dl>
+    <div><dt>Trained on</dt><dd>Sand dunes: flow, curvature, continuity</dd></div>
+    <div><dt>Trigger</dt><dd><span class="muted">none</span></dd></div>
+    <div><dt>Strength used</dt><dd>0.75</dd></div>
+    <div><dt>File</dt><dd class="mono small break">moleansand_pytorch_lora_weights.safetensors</dd></div>
+  </dl>
+</div></div></section><section class="block"><h2 class="section-label mono">Dataset</h2><div class="dataset">
+  <p>25 cropped images of facade mullion systems</p>
+  <p class="muted small">Captions from a Florence-2 workflow and Claude, edited by hand</p>
+  <div class="thumbs"><img src="../../assets/leo-georges/mullions/01.jpg" alt="" loading="lazy"><img src="../../assets/leo-georges/mullions/02.jpg" alt="" loading="lazy"><img src="../../assets/leo-georges/mullions/03.jpg" alt="" loading="lazy"><img src="../../assets/leo-georges/mullions/04.jpg" alt="" loading="lazy"><img src="../../assets/leo-georges/mullions/05.jpg" alt="" loading="lazy"><img src="../../assets/leo-georges/mullions/06.jpg" alt="" loading="lazy"><img src="../../assets/leo-georges/mullions/07.jpg" alt="" loading="lazy"><img src="../../assets/leo-georges/mullions/08.jpg" alt="" loading="lazy"><img src="../../assets/leo-georges/mullions/09.jpg" alt="" loading="lazy"><img src="../../assets/leo-georges/mullions/10.jpg" alt="" loading="lazy"><img src="../../assets/leo-georges/mullions/11.jpg" alt="" loading="lazy"><img src="../../assets/leo-georges/mullions/12.jpg" alt="" loading="lazy"></div>
+  <blockquote>The image is a close-up of the exterior of a modern building. The building has a unique architectural design with a series of curved glass panels that create a geometric pattern. The panels are arranged in a way that creates a sense of depth and dimension. The glass panels are reflecting the building and the sky, creating a mirror-like effect. In the center of the image, there is a tall tower with a clock on top. The…</blockquote><blockquote>The image is a close-up of a tall, modern building with multiple windows. The windows are arranged in a grid-like pattern, with each window having a unique design. The building appears to be made of glass and metal, with a brown exterior and a glass facade. The sky is visible through the windows, and the overall appearance of the building is sleek and contemporary. The image is taken from a low angle, looking up at t…</blockquote>
+  <a class="small" href="../../assets/leo-georges/mullions-captions.txt">All 25 captions (.txt)</a>
+</div><div class="dataset">
+  <p>25 cropped images of wind-shaped sand dunes</p>
+  <p class="muted small">Captions from a Florence-2 workflow and Claude, edited by hand</p>
+  <div class="thumbs"><img src="../../assets/leo-georges/dunes/01.jpg" alt="" loading="lazy"><img src="../../assets/leo-georges/dunes/02.jpg" alt="" loading="lazy"><img src="../../assets/leo-georges/dunes/03.jpg" alt="" loading="lazy"><img src="../../assets/leo-georges/dunes/04.jpg" alt="" loading="lazy"><img src="../../assets/leo-georges/dunes/05.jpg" alt="" loading="lazy"><img src="../../assets/leo-georges/dunes/06.jpg" alt="" loading="lazy"><img src="../../assets/leo-georges/dunes/07.jpg" alt="" loading="lazy"><img src="../../assets/leo-georges/dunes/08.jpg" alt="" loading="lazy"><img src="../../assets/leo-georges/dunes/09.jpg" alt="" loading="lazy"><img src="../../assets/leo-georges/dunes/10.jpg" alt="" loading="lazy"><img src="../../assets/leo-georges/dunes/11.jpg" alt="" loading="lazy"><img src="../../assets/leo-georges/dunes/12.jpg" alt="" loading="lazy"></div>
+  <blockquote>natural desert sand dunes, aerial close-up macro view, undulating ripple 
+formations, soft wind-carved ridges, warm beige and golden tan tones, 
+deep shadow valleys in warm brown, smooth fine-grain sand texture, 
+organic flowing curves, high contrast light and shadow, photorealistic, 
+no people, no objects, pure sand surface, warm natural lighting, 
+muted earth tones, desert landscape material stud</blockquote><blockquote>natural desert sand ripples, close-up macro surface texture, 
+uniform diagonal wind-formed ridges, repetitive parallel corrugation, 
+warm terracotta and burnt sienna tones, fine-grain sand material, 
+shallow shadow grooves between crests, consistent directional pattern, 
+45-degree diagonal orientation, photorealistic, no people, no objects, 
+pure sand surface, even raking sidelight, earth tones, 
+desert landsca…</blockquote>
+  <a class="small" href="../../assets/leo-georges/dunes-captions.txt">All 25 captions (.txt)</a>
+</div></section><section class="block"><h2 class="section-label mono">Try it</h2><div class="prompt"><p class="mono small">Facade detail on flat surface, glass curtain wall with parametric mullions derived from dune contour lines, strict grid with subtle horizontal deformation, clean separation of structure and facade, soft light — both LoRAs at 0.75, guidance 4</p><button class="copy mono small" type="button">Copy</button></div></section></div>
+<nav class="wrap pager-bottom mono small"><a href="../jack-smith/">← Crockett · Villette · Oudolf</a><a href="../michael-natinsky/">AI as a Drawing Tool →</a></nav>
+<footer class="foot wrap">
+  <div>ARCH 507 — Generative AI: Thinking and Designing with Machine Intelligence<br>University of Michigan, Taubman College of Architecture and Urban Planning · Winter 2026</div>
+  <div>Instructor: Ishan Pal Singh</div>
+  <div class="foot-note">Student work shared for education and research. LoRAs are free for non-commercial use with credit to the student. Datasets built from other people's images are shown as captions and small thumbnails only.</div>
+</footer>
+<script src="../../site.js"></script>
+</body>
+</html>

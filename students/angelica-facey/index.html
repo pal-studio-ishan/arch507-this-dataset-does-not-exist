@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Memory — Angelica Facey</title>
+<meta name="description" content="Teaching a razor-sharp model the grain, blur and quiet of old photographs.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../site.css">
+</head>
+<body>
+
+<header class="top wrap">
+  <a class="mono small" href="../../">← All projects</a>
+  <nav class="mono small pager"><a href="../yewon-seo/">← Yewon Seo</a><a href="../arushi-chopra/">Arushi Chopra →</a></nav>
+</header>
+<section class="p-hero wrap">
+  <p class="mono small muted">Angelica Facey</p>
+  <h1>Memory</h1>
+  <p class="lede">Teaching a razor-sharp model the grain, blur and quiet of old photographs.</p>
+</section>
+<div class="p-cover wrap"><img src="../../assets/angelica-facey/final/03.jpg" alt=""></div>
+<section class="p-body wrap">
+  <article class="prose"><h2>The question</h2>
+<p>Models like Flux chase perfect, high-resolution realism. What gets lost is imperfection: grain, softness, the feel of time passing. Angelica asked whether a model could carry the "colours of time" from old photographs, and build a world that feels both made-up and familiar, like a memory.</p>
+<h2>What they did</h2>
+<ul>
+<li>Built two datasets of black-and-white landscape photographs: forest paths and canopy light for one LoRA, mountain panoramas for the other.</li>
+<li>Wrote the captions as atmosphere rather than lists of objects, using words like <em>tranquillity</em>, <em>seclusion</em> and <em>enclosure</em>. Angelica "co-wrote" them with Gemini, mixing a personal description with what the model said it saw.</li>
+<li>Trained two FLUX LoRAs on fal.ai, then combined them in ComfyUI. One LoRA led at full strength and the other supported at 0.75, which made it possible to collage each composition.</li>
+</ul>
+<h2>What they found</h2>
+<ul>
+<li>Captions written as mood and story pushed the model toward a feeling, not just a subject.</li>
+<li>Two LoRAs on the same idea but with different subjects worked like two paintbrushes for one world.</li>
+<li>The grain and low-fi texture survived into new scenes the datasets never showed.</li>
+</ul></article>
+  <aside><dl class="glance">
+  <div><dt>LoRAs</dt><dd>2</dd></div>
+  <div><dt>Base model</dt><dd>FLUX.1 [dev]</dd></div>
+  <div><dt>Trigger words</dt><dd><code>C_at_el</code>, <code>YO_c_me_T</code></dd></div>
+  <div><dt>Final images</dt><dd>12</dd></div>
+</dl></aside>
+</section>
+<section class="block wrap"><h2 class="section-label mono">Final images</h2><div class="gallery"><a class="g-item" href="../../assets/angelica-facey/final/01.jpg" data-w="1920" data-h="1080"><img src="../../assets/angelica-facey/final/01_t.jpg" alt="Memory, image 1" loading="lazy" width="1920" height="1080"></a><a class="g-item" href="../../assets/angelica-facey/final/02.jpg" data-w="1920" data-h="1080"><img src="../../assets/angelica-facey/final/02_t.jpg" alt="Memory, image 2" loading="lazy" width="1920" height="1080"></a><a class="g-item" href="../../assets/angelica-facey/final/03.jpg" data-w="1920" data-h="1080"><img src="../../assets/angelica-facey/final/03_t.jpg" alt="Memory, image 3" loading="lazy" width="1920" height="1080"></a><a class="g-item" href="../../assets/angelica-facey/final/04.jpg" data-w="1920" data-h="1080"><img src="../../assets/angelica-facey/final/04_t.jpg" alt="Memory, image 4" loading="lazy" width="1920" height="1080"></a><a class="g-item" href="../../assets/angelica-facey/final/05.jpg" data-w="1920" data-h="1080"><img src="../../assets/angelica-facey/final/05_t.jpg" alt="Memory, image 5" loading="lazy" width="1920" height="1080"></a><a class="g-item" href="../../assets/angelica-facey/final/06.jpg" data-w="1920" data-h="1080"><img src="../../assets/angelica-facey/final/06_t.jpg" alt="Memory, image 6" loading="lazy" width="1920" height="1080"></a><a class="g-item" href="../../assets/angelica-facey/final/07.jpg" data-w="1920" data-h="1080"><img src="../../assets/angelica-facey/final/07_t.jpg" alt="Memory, image 7" loading="lazy" width="1920" height="1080"></a><a class="g-item" href="../../assets/angelica-facey/final/08.jpg" data-w="1920" data-h="1080"><img src="../../assets/angelica-facey/final/08_t.jpg" alt="Memory, image 8" loading="lazy" width="1920" height="1080"></a><a class="g-item" href="../../assets/angelica-facey/final/09.jpg" data-w="1920" data-h="1080"><img src="../../assets/angelica-facey/final/09_t.jpg" alt="Memory, image 9" loading="lazy" width="1920" height="1080"></a><a class="g-item" href="../../assets/angelica-facey/final/10.jpg" data-w="1920" data-h="1080"><img src="../../assets/angelica-facey/final/10_t.jpg" alt="Memory, image 10" loading="lazy" width="1920" height="1080"></a><a class="g-item" href="../../assets/angelica-facey/final/11.jpg" data-w="1920" data-h="1080"><img src="../../assets/angelica-facey/final/11_t.jpg" alt="Memory, image 11" loading="lazy" width="1920" height="1080"></a><a class="g-item" href="../../assets/angelica-facey/final/12.jpg" data-w="1920" data-h="1080"><img src="../../assets/angelica-facey/final/12_t.jpg" alt="Memory, image 12" loading="lazy" width="1920" height="1080"></a></div></section>
+<div class="wrap"><section class="block"><h2 class="section-label mono">LoRAs</h2><div class="loras"><div class="lora">
+  <div class="lora-head"><h3 class="mono">C_at_el</h3><span class="btn btn-off">Download soon</span></div>
+  <dl>
+    <div><dt>Trained on</dt><dd>Forest paths and canopy light</dd></div>
+    <div><dt>Trigger</dt><dd><code>C_at_el</code></dd></div>
+    <div><dt>Strength used</dt><dd>1.0 (main)</dd></div>
+    <div><dt>File</dt><dd class="mono small break">C_at_el.safetensors</dd></div>
+  </dl>
+</div><div class="lora">
+  <div class="lora-head"><h3 class="mono">YO_c_me_T</h3><span class="btn btn-off">Download soon</span></div>
+  <dl>
+    <div><dt>Trained on</dt><dd>Mountain and valley panoramas</dd></div>
+    <div><dt>Trigger</dt><dd><code>YO_c_me_T</code></dd></div>
+    <div><dt>Strength used</dt><dd>0.75 (second)</dd></div>
+    <div><dt>File</dt><dd class="mono small break">YO_c_me_T.safetensors</dd></div>
+  </dl>
+</div></div></section><section class="block"><h2 class="section-label mono">Dataset</h2><div class="dataset">
+  <p>25 black-and-white forest photographs (Robert Adams, <em>An Old Forest Road</em>)</p>
+  <p class="muted small">Captions co-written with Gemini, each starting with the trigger word</p>
+  <div class="thumbs"><img src="../../assets/angelica-facey/forest/01.jpg" alt="" loading="lazy"><img src="../../assets/angelica-facey/forest/02.jpg" alt="" loading="lazy"><img src="../../assets/angelica-facey/forest/03.jpg" alt="" loading="lazy"><img src="../../assets/angelica-facey/forest/04.jpg" alt="" loading="lazy"><img src="../../assets/angelica-facey/forest/05.jpg" alt="" loading="lazy"><img src="../../assets/angelica-facey/forest/06.jpg" alt="" loading="lazy"><img src="../../assets/angelica-facey/forest/07.jpg" alt="" loading="lazy"><img src="../../assets/angelica-facey/forest/08.jpg" alt="" loading="lazy"><img src="../../assets/angelica-facey/forest/09.jpg" alt="" loading="lazy"><img src="../../assets/angelica-facey/forest/10.jpg" alt="" loading="lazy"><img src="../../assets/angelica-facey/forest/11.jpg" alt="" loading="lazy"><img src="../../assets/angelica-facey/forest/12.jpg" alt="" loading="lazy"></div>
+  <blockquote>C_at_el, a high-contrast monochrome photograph with a heavy vintage film grain, like a textured layer of memory. Shards of luminous sunlight filter through a protective canopy, creating intense glimmers of light and shadow that dance across a quiet forest path. It is a world defined by the balance of warmth and stillness, offering absolute peace and profound calmness to the heart.</blockquote><blockquote>C_at_el, a high-contrast monochrome dream with a textured layer of memory and heavy film grain. A narrow, winding trail disappears into an overgrown and lush woodland sanctuary. A natural arch of branches creates a protective portal into deep, peaceful shadows and velvet silence. The scene blurs the threshold of dreaming and living, offering a moment of profound stillness and a refuge for the heart, guided by the dan…</blockquote>
+  <a class="small" href="../../assets/angelica-facey/forest-captions.txt">All 25 captions (.txt)</a>
+</div><div class="dataset">
+  <p>15 black-and-white mountain photographs (Ansel Adams, Alma Lavenson, Carleton Watkins, Adam Clark Vroman)</p>
+  <p class="muted small">Captions co-written with Gemini, each starting with the trigger word</p>
+  <div class="thumbs"><img src="../../assets/angelica-facey/mountain/01.jpg" alt="" loading="lazy"><img src="../../assets/angelica-facey/mountain/02.jpg" alt="" loading="lazy"><img src="../../assets/angelica-facey/mountain/03.jpg" alt="" loading="lazy"><img src="../../assets/angelica-facey/mountain/04.jpg" alt="" loading="lazy"><img src="../../assets/angelica-facey/mountain/05.jpg" alt="" loading="lazy"><img src="../../assets/angelica-facey/mountain/06.jpg" alt="" loading="lazy"><img src="../../assets/angelica-facey/mountain/07.jpg" alt="" loading="lazy"><img src="../../assets/angelica-facey/mountain/08.jpg" alt="" loading="lazy"><img src="../../assets/angelica-facey/mountain/09.jpg" alt="" loading="lazy"><img src="../../assets/angelica-facey/mountain/10.jpg" alt="" loading="lazy"><img src="../../assets/angelica-facey/mountain/11.jpg" alt="" loading="lazy"><img src="../../assets/angelica-facey/mountain/12.jpg" alt="" loading="lazy"></div>
+  <blockquote>YO_c_me_T, a high-contrast monochrome glimpse of stillness and memory of peace. Heavy vintage film grain and a textured layer of memory. A majestic mountain panorama reveals a labyrinth of deep, shadowed granite valleys, receding into a massive range of jagged peaks under a pale, cloudy sky. A single, tall pine tree stands in sharp silhouette on the right, keeping a solitary watch over the immense wilderness. Shimmer…</blockquote><blockquote>YO_c_me_T, a high-contrast monochrome glimpse of stillness and memory of peace. Heavy vintage film grain and a textured layer of memory. The scene unfolds across a vast, snow-dusted granite valley, revealing a massive range of jagged peaks under a pale, diffuse sky with light clouds. In the foreground, dense, dark tree guardians blanket the forest floor, offering a protective border. Brilliant white light illuminates…</blockquote>
+  <a class="small" href="../../assets/angelica-facey/mountain-captions.txt">All 15 captions (.txt)</a>
+</div></section><section class="block"><h2 class="section-label mono">Try it</h2><div class="prompt"><p class="mono small">Delicate clusters of tiny, white flowers and blades of grass grow from the edges of a calm, sleeping lake — C_at_el 1.0 + YO_c_me_T 0.75, Flux guidance 5</p><button class="copy mono small" type="button">Copy</button></div></section></div>
+<nav class="wrap pager-bottom mono small"><a href="../yewon-seo/">← Render a Lamp</a><a href="../arushi-chopra/">Bambu →</a></nav>
+<footer class="foot wrap">
+  <div>ARCH 507 — Generative AI: Thinking and Designing with Machine Intelligence<br>University of Michigan, Taubman College of Architecture and Urban Planning · Winter 2026</div>
+  <div>Instructor: Ishan Pal Singh</div>
+  <div class="foot-note">Student work shared for education and research. LoRAs are free for non-commercial use with credit to the student. Datasets built from other people's images are shown as captions and small thumbnails only.</div>
+</footer>
+<script src="../../site.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>1970s Soviet Interiors — Frank Michel</title>
+<meta name="description" content="Does a culturally specific dataset remove a model&#x27;s Western bias? Not entirely.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../site.css">
+</head>
+<body>
+
+<header class="top wrap">
+  <a class="mono small" href="../../">← All projects</a>
+  <nav class="mono small pager"><a href="../emily-naumann/">← Emily Naumann</a><a href="../hua-lin/">Hua Lin (Dylan) →</a></nav>
+</header>
+<section class="p-hero wrap">
+  <p class="mono small muted">Frank Michel</p>
+  <h1>1970s Soviet Interiors</h1>
+  <p class="lede">Does a culturally specific dataset remove a model&#x27;s Western bias? Not entirely.</p>
+</section>
+<div class="p-cover wrap"><img src="../../assets/frank-michel/final/01.jpg" alt=""></div>
+<section class="p-body wrap">
+  <article class="prose"><p class="note">The LoRA file wasn't handed in, so there's nothing to download for this project yet.</p><h2>The question</h2>
+<p>If you fine-tune a model on one culture's interiors, does it stop defaulting to its own assumptions? Frank trained a LoRA on 1970s Soviet living rooms to test how much Western bias would remain.</p>
+<h2>What they did</h2>
+<ul>
+<li>Collected photographs of Soviet apartment interiors from the period and captioned them with a trigger phrase.</li>
+<li>Wrote twelve detailed room prompts (living room, kitchen, hallway, child's room, study, a room in winter) and generated one image for each.</li>
+<li>Reviewed the results with the review group, including someone who had lived in Russia.</li>
+</ul>
+<h2>What they found</h2>
+<ul>
+<li>The images still showed strong Western influence. The model kept adding American-style objects, especially televisions, some of them not even from the 1970s.</li>
+<li>It leaned into stereotypes, often producing cramped, inefficient rooms that reflected general assumptions rather than real homes.</li>
+<li>The base model's original training kept showing through after fine-tuning. AI doesn't fully unlearn its biases, which matters wherever accuracy and cultural authenticity count.</li>
+</ul></article>
+  <aside><dl class="glance">
+  <div><dt>LoRAs</dt><dd>Not handed in</dd></div>
+  <div><dt>Base model</dt><dd>FLUX.1 [dev]</dd></div>
+  <div><dt>Trigger words</dt><dd><span class="muted">none</span></dd></div>
+  <div><dt>Final images</dt><dd>12</dd></div>
+</dl></aside>
+</section>
+<section class="block wrap"><h2 class="section-label mono">Final images</h2><div class="gallery"><a class="g-item" href="../../assets/frank-michel/final/01.jpg" data-w="1920" data-h="1088"><img src="../../assets/frank-michel/final/01_t.jpg" alt="1970s Soviet Interiors, image 1" loading="lazy" width="1920" height="1088"></a><a class="g-item" href="../../assets/frank-michel/final/02.jpg" data-w="1920" data-h="1088"><img src="../../assets/frank-michel/final/02_t.jpg" alt="1970s Soviet Interiors, image 2" loading="lazy" width="1920" height="1088"></a><a class="g-item" href="../../assets/frank-michel/final/03.jpg" data-w="1920" data-h="1088"><img src="../../assets/frank-michel/final/03_t.jpg" alt="1970s Soviet Interiors, image 3" loading="lazy" width="1920" height="1088"></a><a class="g-item" href="../../assets/frank-michel/final/04.jpg" data-w="1920" data-h="1088"><img src="../../assets/frank-michel/final/04_t.jpg" alt="1970s Soviet Interiors, image 4" loading="lazy" width="1920" height="1088"></a><a class="g-item" href="../../assets/frank-michel/final/05.jpg" data-w="1920" data-h="1088"><img src="../../assets/frank-michel/final/05_t.jpg" alt="1970s Soviet Interiors, image 5" loading="lazy" width="1920" height="1088"></a><a class="g-item" href="../../assets/frank-michel/final/06.jpg" data-w="1920" data-h="1088"><img src="../../assets/frank-michel/final/06_t.jpg" alt="1970s Soviet Interiors, image 6" loading="lazy" width="1920" height="1088"></a><a class="g-item" href="../../assets/frank-michel/final/07.jpg" data-w="1920" data-h="1088"><img src="../../assets/frank-michel/final/07_t.jpg" alt="1970s Soviet Interiors, image 7" loading="lazy" width="1920" height="1088"></a><a class="g-item" href="../../assets/frank-michel/final/08.jpg" data-w="1920" data-h="1088"><img src="../../assets/frank-michel/final/08_t.jpg" alt="1970s Soviet Interiors, image 8" loading="lazy" width="1920" height="1088"></a><a class="g-item" href="../../assets/frank-michel/final/09.jpg" data-w="1920" data-h="1088"><img src="../../assets/frank-michel/final/09_t.jpg" alt="1970s Soviet Interiors, image 9" loading="lazy" width="1920" height="1088"></a><a class="g-item" href="../../assets/frank-michel/final/10.jpg" data-w="1920" data-h="1088"><img src="../../assets/frank-michel/final/10_t.jpg" alt="1970s Soviet Interiors, image 10" loading="lazy" width="1920" height="1088"></a><a class="g-item" href="../../assets/frank-michel/final/11.jpg" data-w="1920" data-h="1088"><img src="../../assets/frank-michel/final/11_t.jpg" alt="1970s Soviet Interiors, image 11" loading="lazy" width="1920" height="1088"></a><a class="g-item" href="../../assets/frank-michel/final/12.jpg" data-w="1920" data-h="1088"><img src="../../assets/frank-michel/final/12_t.jpg" alt="1970s Soviet Interiors, image 12" loading="lazy" width="1920" height="1088"></a></div></section>
+<div class="wrap"><section class="block"><h2 class="section-label mono">Dataset</h2><div class="dataset">
+  <p>15 photographs of 1970s Soviet apartment interiors</p>
+  <p class="muted small">Captions with the trigger phrase "Style of Flank"; some files left empty</p>
+  <div class="thumbs"><img src="../../assets/frank-michel/soviet-interiors/01.jpg" alt="" loading="lazy"><img src="../../assets/frank-michel/soviet-interiors/02.jpg" alt="" loading="lazy"><img src="../../assets/frank-michel/soviet-interiors/03.jpg" alt="" loading="lazy"><img src="../../assets/frank-michel/soviet-interiors/04.jpg" alt="" loading="lazy"><img src="../../assets/frank-michel/soviet-interiors/05.jpg" alt="" loading="lazy"><img src="../../assets/frank-michel/soviet-interiors/06.jpg" alt="" loading="lazy"><img src="../../assets/frank-michel/soviet-interiors/07.jpg" alt="" loading="lazy"><img src="../../assets/frank-michel/soviet-interiors/08.jpg" alt="" loading="lazy"><img src="../../assets/frank-michel/soviet-interiors/09.jpg" alt="" loading="lazy"><img src="../../assets/frank-michel/soviet-interiors/10.jpg" alt="" loading="lazy"><img src="../../assets/frank-michel/soviet-interiors/11.jpg" alt="" loading="lazy"><img src="../../assets/frank-michel/soviet-interiors/12.jpg" alt="" loading="lazy"></div>
+  
+  
+</div></section><section class="block"><h2 class="section-label mono">Try it</h2><div class="prompt"><p class="mono small">A modest 1970s Soviet apartment living room, realistically furnished and slightly worn, featuring a low wooden wall unit filled with books, glassware, and small ornaments… Style of Flank</p><button class="copy mono small" type="button">Copy</button></div></section></div>
+<nav class="wrap pager-bottom mono small"><a href="../emily-naumann/">← le_zine</a><a href="../hua-lin/">2.5D World →</a></nav>
+<footer class="foot wrap">
+  <div>ARCH 507 — Generative AI: Thinking and Designing with Machine Intelligence<br>University of Michigan, Taubman College of Architecture and Urban Planning · Winter 2026</div>
+  <div>Instructor: Ishan Pal Singh</div>
+  <div class="foot-note">Student work shared for education and research. LoRAs are free for non-commercial use with credit to the student. Datasets built from other people's images are shown as captions and small thumbnails only.</div>
+</footer>
+<script src="../../site.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI as a Drawing Tool — Michael Natinsky</title>
+<meta name="description" content="Generating architectural elevations in the flat, colourful style of Sander Patelski.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../site.css">
+</head>
+<body>
+
+<header class="top wrap">
+  <a class="mono small" href="../../">← All projects</a>
+  <nav class="mono small pager"><a href="../leo-georges/">← Leo Georges</a><a href="../ravi-kumar/">Ravi Kumar →</a></nav>
+</header>
+<section class="p-hero wrap">
+  <p class="mono small muted">Michael Natinsky</p>
+  <h1>AI as a Drawing Tool</h1>
+  <p class="lede">Generating architectural elevations in the flat, colourful style of Sander Patelski.</p>
+</section>
+<div class="p-cover wrap"><img src="../../assets/michael-natinsky/final/02.jpg" alt=""></div>
+<section class="p-body wrap">
+  <article class="prose"><h2>The question</h2>
+<p>Could AI be a real design tool for elevations, generating facade patterns and compositions worth bringing into your own work? Midjourney's attempts at elevations mostly failed, so Michael trained custom LoRAs.</p>
+<h2>What they did</h2>
+<ul>
+<li>Trained one LoRA on Sander Patelski's flat, colourful elevations and a second on plain architectural elevation drawings.</li>
+<li>Pushed the style across very different prompts: a Bauhaus pastel building, a Chicago skyscraper in the rain, a stone European village, and buildings in the spirit of Barragán, Herzog &amp; de Meuron, Zumthor and Ando.</li>
+</ul>
+<h2>What they found</h2>
+<ul>
+<li>The Patelski style dominated. Even when Michael asked for brick, wood or stone, it fell back on flat pastel colours, and buildings floated in empty space unless the prompt forced context in.</li>
+<li>The landscape aspect ratio cut skyscrapers off. The model wouldn't show the full height.</li>
+<li>The drawing LoRA added window rhythms and some sketchy drafting lines.</li>
+<li>The model rearranges patterns rather than designing. It understands neither structure nor material. This tool may be best for presenting your own work, for example by running your elevations through it with ControlNet, which Michael planned but couldn't get running.</li>
+</ul></article>
+  <aside><dl class="glance">
+  <div><dt>LoRAs</dt><dd>2</dd></div>
+  <div><dt>Base model</dt><dd>FLUX.1 [dev]</dd></div>
+  <div><dt>Trigger words</dt><dd><code>Style of michaelset / Patelski Elevations</code></dd></div>
+  <div><dt>Final images</dt><dd>15</dd></div>
+</dl></aside>
+</section>
+<section class="block wrap"><h2 class="section-label mono">Final images</h2><div class="gallery"><a class="g-item" href="../../assets/michael-natinsky/final/01.jpg" data-w="1920" data-h="1080"><img src="../../assets/michael-natinsky/final/01_t.jpg" alt="AI as a Drawing Tool, image 1" loading="lazy" width="1920" height="1080"></a><a class="g-item" href="../../assets/michael-natinsky/final/02.jpg" data-w="1920" data-h="1080"><img src="../../assets/michael-natinsky/final/02_t.jpg" alt="AI as a Drawing Tool, image 2" loading="lazy" width="1920" height="1080"></a><a class="g-item" href="../../assets/michael-natinsky/final/03.jpg" data-w="1920" data-h="1080"><img src="../../assets/michael-natinsky/final/03_t.jpg" alt="AI as a Drawing Tool, image 3" loading="lazy" width="1920" height="1080"></a><a class="g-item" href="../../assets/michael-natinsky/final/04.jpg" data-w="1920" data-h="1080"><img src="../../assets/michael-natinsky/final/04_t.jpg" alt="AI as a Drawing Tool, image 4" loading="lazy" width="1920" height="1080"></a><a class="g-item" href="../../assets/michael-natinsky/final/05.jpg" data-w="1920" data-h="1080"><img src="../../assets/michael-natinsky/final/05_t.jpg" alt="AI as a Drawing Tool, image 5" loading="lazy" width="1920" height="1080"></a><a class="g-item" href="../../assets/michael-natinsky/final/06.jpg" data-w="1920" data-h="1080"><img src="../../assets/michael-natinsky/final/06_t.jpg" alt="AI as a Drawing Tool, image 6" loading="lazy" width="1920" height="1080"></a><a class="g-item" href="../../assets/michael-natinsky/final/07.jpg" data-w="1920" data-h="1088"><img src="../../assets/michael-natinsky/final/07_t.jpg" alt="AI as a Drawing Tool, image 7" loading="lazy" width="1920" height="1088"></a><a class="g-item" href="../../assets/michael-natinsky/final/08.jpg" data-w="1920" data-h="1088"><img src="../../assets/michael-natinsky/final/08_t.jpg" alt="AI as a Drawing Tool, image 8" loading="lazy" width="1920" height="1088"></a><a class="g-item" href="../../assets/michael-natinsky/final/09.jpg" data-w="1920" data-h="1088"><img src="../../assets/michael-natinsky/final/09_t.jpg" alt="AI as a Drawing Tool, image 9" loading="lazy" width="1920" height="1088"></a><a class="g-item" href="../../assets/michael-natinsky/final/10.jpg" data-w="1920" data-h="1088"><img src="../../assets/michael-natinsky/final/10_t.jpg" alt="AI as a Drawing Tool, image 10" loading="lazy" width="1920" height="1088"></a><a class="g-item" href="../../assets/michael-natinsky/final/11.jpg" data-w="1920" data-h="1088"><img src="../../assets/michael-natinsky/final/11_t.jpg" alt="AI as a Drawing Tool, image 11" loading="lazy" width="1920" height="1088"></a><a class="g-item" href="../../assets/michael-natinsky/final/12.jpg" data-w="1920" data-h="1088"><img src="../../assets/michael-natinsky/final/12_t.jpg" alt="AI as a Drawing Tool, image 12" loading="lazy" width="1920" height="1088"></a><a class="g-item" href="../../assets/michael-natinsky/final/13.jpg" data-w="1920" data-h="1088"><img src="../../assets/michael-natinsky/final/13_t.jpg" alt="AI as a Drawing Tool, image 13" loading="lazy" width="1920" height="1088"></a><a class="g-item" href="../../assets/michael-natinsky/final/14.jpg" data-w="1920" data-h="1088"><img src="../../assets/michael-natinsky/final/14_t.jpg" alt="AI as a Drawing Tool, image 14" loading="lazy" width="1920" height="1088"></a><a class="g-item" href="../../assets/michael-natinsky/final/15.jpg" data-w="1920" data-h="1088"><img src="../../assets/michael-natinsky/final/15_t.jpg" alt="AI as a Drawing Tool, image 15" loading="lazy" width="1920" height="1088"></a></div></section>
+<div class="wrap"><section class="block"><h2 class="section-label mono">LoRAs</h2><div class="loras"><div class="lora">
+  <div class="lora-head"><h3 class="mono">Patelski</h3><span class="btn btn-off">Download soon</span></div>
+  <dl>
+    <div><dt>Trained on</dt><dd>Sander Patelski's graphic elevations</dd></div>
+    <div><dt>Trigger</dt><dd><code>Style of michaelset / Patelski Elevations</code></dd></div>
+    <div><dt>Strength used</dt><dd>1.0</dd></div>
+    <div><dt>File</dt><dd class="mono small break">Patelski.safetensors</dd></div>
+  </dl>
+</div><div class="lora">
+  <div class="lora-head"><h3 class="mono">Elevations</h3><span class="btn btn-off">Download soon</span></div>
+  <dl>
+    <div><dt>Trained on</dt><dd>Plain architectural elevation drawings</dd></div>
+    <div><dt>Trigger</dt><dd><span class="muted">none</span></dd></div>
+    <div><dt>Strength used</dt><dd>1.0</dd></div>
+    <div><dt>File</dt><dd class="mono small break">Elevations.safetensors</dd></div>
+  </dl>
+</div></div></section><section class="block"><h2 class="section-label mono">Dataset</h2><div class="dataset">
+  <p>18 elevation drawings by Sander Patelski</p>
+  <p class="muted small">Captions describing each drawing</p>
+  <div class="thumbs"><img src="../../assets/michael-natinsky/patelski/01.jpg" alt="" loading="lazy"><img src="../../assets/michael-natinsky/patelski/02.jpg" alt="" loading="lazy"><img src="../../assets/michael-natinsky/patelski/03.jpg" alt="" loading="lazy"><img src="../../assets/michael-natinsky/patelski/04.jpg" alt="" loading="lazy"><img src="../../assets/michael-natinsky/patelski/05.jpg" alt="" loading="lazy"><img src="../../assets/michael-natinsky/patelski/06.jpg" alt="" loading="lazy"><img src="../../assets/michael-natinsky/patelski/07.jpg" alt="" loading="lazy"><img src="../../assets/michael-natinsky/patelski/08.jpg" alt="" loading="lazy"><img src="../../assets/michael-natinsky/patelski/09.jpg" alt="" loading="lazy"><img src="../../assets/michael-natinsky/patelski/10.jpg" alt="" loading="lazy"><img src="../../assets/michael-natinsky/patelski/11.jpg" alt="" loading="lazy"><img src="../../assets/michael-natinsky/patelski/12.jpg" alt="" loading="lazy"></div>
+  <blockquote>This image is a print by Studio Sander Patelski. It shows an interior corner space with two green built-in benches wrapping around a tiled corner. The walls are covered in a red orthogonal grid over a mottled olive and beige textured surface. The floor is light tile with a green rug-like zone in the center. Perspective is slightly skewed and graphic, with strong planar surfaces. Fine drafting lines and halftone textu…</blockquote><blockquote>This image is a print by Studio Sander Patelski. It shows a desert modern house with a pool in the foreground and mountains in the background. Horizontal planes and glass walls define the composition. Colors include muted sand, teal water, pale green, and brown. Perspective is linear and calm. Shadows are crisp and elongated. The image balances landscape and architecture with clean geometry.</blockquote>
+  <a class="small" href="../../assets/michael-natinsky/patelski-captions.txt">All 18 captions (.txt)</a>
+</div><div class="dataset">
+  <p>19 basic architectural elevation drawings</p>
+  <p class="muted small">Captions describing each drawing</p>
+  <div class="thumbs"><img src="../../assets/michael-natinsky/elevations/01.jpg" alt="" loading="lazy"><img src="../../assets/michael-natinsky/elevations/02.jpg" alt="" loading="lazy"><img src="../../assets/michael-natinsky/elevations/03.jpg" alt="" loading="lazy"><img src="../../assets/michael-natinsky/elevations/04.jpg" alt="" loading="lazy"><img src="../../assets/michael-natinsky/elevations/05.jpg" alt="" loading="lazy"><img src="../../assets/michael-natinsky/elevations/06.jpg" alt="" loading="lazy"><img src="../../assets/michael-natinsky/elevations/07.jpg" alt="" loading="lazy"><img src="../../assets/michael-natinsky/elevations/08.jpg" alt="" loading="lazy"><img src="../../assets/michael-natinsky/elevations/09.jpg" alt="" loading="lazy"><img src="../../assets/michael-natinsky/elevations/10.jpg" alt="" loading="lazy"><img src="../../assets/michael-natinsky/elevations/11.jpg" alt="" loading="lazy"><img src="../../assets/michael-natinsky/elevations/12.jpg" alt="" loading="lazy"></div>
+  <blockquote>Elevation drawing of a building presented in a flat, orthographic frontal view, emphasizing aligned geometry, consistent linework, and facade representation without spatial distortion. Variation 1 focuses on planar composition, proportional clarity, and the depiction of architectural elements as a vertical facade.</blockquote><blockquote>Elevation drawing of a building presented in a flat, orthographic frontal view, emphasizing aligned geometry, consistent linework, and facade representation without spatial distortion. Variation 2 focuses on planar composition, proportional clarity, and the depiction of architectural elements as a vertical facade.</blockquote>
+  <a class="small" href="../../assets/michael-natinsky/elevations-captions.txt">All 19 captions (.txt)</a>
+</div></section><section class="block"><h2 class="section-label mono">Try it</h2><div class="prompt"><p class="mono small">Graphic architectural elevation drawing in the style of Sander Patelski, an early modern bauhaus style glass and pastel building. Bright saturated colors… Style of michaelset</p><button class="copy mono small" type="button">Copy</button></div></section></div>
+<nav class="wrap pager-bottom mono small"><a href="../leo-georges/">← Sand</a><a href="../ravi-kumar/">Amabuye →</a></nav>
+<footer class="foot wrap">
+  <div>ARCH 507 — Generative AI: Thinking and Designing with Machine Intelligence<br>University of Michigan, Taubman College of Architecture and Urban Planning · Winter 2026</div>
+  <div>Instructor: Ishan Pal Singh</div>
+  <div class="foot-note">Student work shared for education and research. LoRAs are free for non-commercial use with credit to the student. Datasets built from other people's images are shown as captions and small thumbnails only.</div>
+</footer>
+<script src="../../site.js"></script>
+</body>
+</html>

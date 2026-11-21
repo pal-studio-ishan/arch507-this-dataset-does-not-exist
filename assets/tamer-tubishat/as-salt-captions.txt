@@ -1,0 +1,69 @@
+01  architamer, As-Salt Jordan, yellow limestone arcade facade, arched glass doors, slender stone columns, elevated balcony walkway, hillside urban view, historic architecture
+
+02  architamer, As-Salt Jordan, dense hillside urban fabric, stacked yellow limestone buildings, terraced topography, arched windows, layered stone houses, historic hill city
+
+03  architamer, As-Salt Jordan, yellow limestone street facade, grand arched stone building, exterior stairway between buildings, hillside street, historic urban architecture
+
+04  architamer, As-Salt Jordan, ornate yellow limestone facade, repeated arches, twisted stone columns, green metal balcony railing, upper story windows, historic architectural detail
+
+05  architamer, As-Salt Jordan, yellow limestone doorway, tall arched entrance, carved stone frame, slender columns, narrow stepped street, historic facade detail
+
+06  architamer, As-Salt Jordan, yellow limestone institutional building, tall arched windows, hillside city backdrop, terraced urban landscape, historic stone architecture
+
+07  architamer, As-Salt Jordan, long yellow limestone facade, repeated arched windows, balconies, multi-story historic street building, urban streetscape, stone architecture
+
+08  architamer, As-Salt Jordan, corner limestone building, arched windows, projecting balconies, side stairway, sloped street, historic hillside urban architecture
+
+09  architamer, As-Salt Jordan, low-angle view of yellow limestone facade, arched windows, vertical stone pilasters, green metal balconies, historic architectural elevation
+
+10  architamer, As-Salt Jordan, symmetrical yellow limestone civic building, arcaded entrance, upper arched loggia, formal historic facade, monumental stone architecture
+
+11  architamer, As-Salt Jordan, yellow limestone courtyard, arcaded portico, slender stone columns, shaded threshold space, historic architectural interior courtyard
+
+12  architamer, As-Salt Jordan, yellow limestone courtyard, stepped stone terrace, simple arched doorway, enclosed historic courtyard, stone walls and outdoor threshold space
+
+13  architamer, As-Salt Jordan, yellow limestone courtyard arcade, large stone arches, heavy masonry piers, shaded portico, historic architectural courtyard space
+
+14  architamer, As-Salt Jordan, hillside urban street, yellow limestone houses, exterior stairway, terraced topography, arched windows and balconies, historic stone urban fabric
+
+15  architamer, As-Salt Jordan, layered hillside architecture, yellow limestone building, arcaded loggia, terraced urban slope, dense historic hill city fabric
+
+16  architamer, As-Salt Jordan, yellow limestone stair passage, stepped stone alley, retaining walls, elevated thresholds, historic hillside circulation space
+
+17  architamer, As-Salt Jordan, yellow limestone stair street, narrow stepped alley, aged stone facades, arched openings, handrails, historic hillside urban fabric
+
+18  architamer, As-Salt Jordan, narrow limestone alley, sloped stone street, continuous historic facades, arched doorways, dense old city streetscape
+
+19  architamer, As-Salt Jordan, yellow limestone doorway, pointed arched entrance, carved stone frame, twisted columns, historic facade detail on sloped street
+
+20  architamer, As-Salt Jordan, yellow limestone stair street, long stepped alley, narrow stone facades, layered hillside circulation, historic urban passage
+
+21  architamer, As-Salt Jordan, yellow limestone street facade, arched openings, small balconies, long horizontal historic building, hillside housing backdrop, stone urban frontage
+
+22  architamer, As-Salt Jordan, dense hillside urban fabric, stacked yellow limestone buildings, terraced topography, layered facades, arched windows, historic hill city
+
+23  architamer, As-Salt Jordan, layered hillside architecture, yellow limestone houses, arcaded facades, terraced urban slope, dense historic stone fabric
+
+24  architamer, As-Salt Jordan, narrow market street, covered pedestrian alley, yellow limestone facades, repeated wooden shopfronts, shaded historic commercial streetscape
+
+25  architamer, As-Salt Jordan, sloped stone street, yellow limestone facade, projecting balconies, stepped thresholds, turquoise painted woodwork, historic hillside urban street
+
+26  architamer, As-Salt Jordan, stepped stone stair street, split stairway, yellow limestone walls, metal handrails, narrow hillside circulation, historic urban passage
+
+27  architamer, As-Salt Jordan, corner hillside street, yellow limestone buildings, sloped stone roadway, balconies and arched windows, dense historic urban fabric
+
+28  architamer, As-Salt Jordan, stepped hillside dwelling, layered stone house, balcony facade, stair-based circulation, terraced urban section, historic residential fabric
+
+29  architamer, As-Salt Jordan, aerial hillside city view, monumental central stairway, dense terraced urban fabric, layered stone buildings, historic hill city morphology
+
+30  architamer, As-Salt Jordan, aerial urban fabric, stacked yellow limestone houses, terraced hillside topography, arched windows, dense historic residential cluster
+
+31  architamer, As-Salt Jordan, yellow limestone street facade, arched openings, projecting turquoise balconies, quiet sloped street, historic hillside residential architecture
+
+32  architamer, As-Salt Jordan, wide hillside city view, dense terraced urban fabric, stacked yellow limestone buildings, layered topography, historic hill city panorama
+
+33  architamer, As-Salt Jordan, broad stone stairway, yellow limestone walls, stepped alley, narrow hillside passage, historic urban circulation space
+
+34  architamer, As-Salt Jordan, narrow curving alley, yellow limestone facades, repeated wooden doors, arched openings, dense old city streetscape, historic stone passage
+
+35  architamer, As-Salt Jordan, yellow limestone house entrance, front stairway, arched doorway, planted courtyard garden, elevated threshold, historic residential facade

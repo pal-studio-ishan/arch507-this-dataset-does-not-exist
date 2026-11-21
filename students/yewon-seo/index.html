@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Render a Lamp — Yewon Seo</title>
+<meta name="description" content="Style + form = ? A SANAA-style LoRA and a LoRA of Yewon&#x27;s own product design, mixed to render a planter lamp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../site.css">
+</head>
+<body>
+
+<header class="top wrap">
+  <a class="mono small" href="../../">← All projects</a>
+  <nav class="mono small pager"><a href="../tamer-tubishat/">← Tamer Tubishat</a><a href="../angelica-facey/">Angelica Facey →</a></nav>
+</header>
+<section class="p-hero wrap">
+  <p class="mono small muted">Yewon Seo</p>
+  <h1>Render a Lamp</h1>
+  <p class="lede">Style + form = ? A SANAA-style LoRA and a LoRA of Yewon&#x27;s own product design, mixed to render a planter lamp.</p>
+</section>
+<div class="p-cover wrap"><img src="../../assets/yewon-seo/final/02.jpg" alt=""></div>
+<section class="p-body wrap">
+  <article class="prose"><p class="note">No written analysis was handed in. This summary comes from the review slides.</p><h2>The question</h2>
+<p>Can one LoRA carry a <em>style</em> and another a <em>form</em>, and can mixing them render a real design? Yewon tested it on a product of their own: a planter with a growing light, rendered in the soft, white light of SANAA's architecture.</p>
+<h2>What they did</h2>
+<ul>
+<li>Trained a <strong>style</strong> LoRA on photographs of SANAA buildings and a <strong>form</strong> LoRA on renders of Yewon's own Rhino model of the S-shaped planter lamp.</li>
+<li>Compared a text-only prompt with prompts that used the LoRAs, then mapped a grid of strengths: style from 1.2 to 2.0 with form fixed, and the reverse.</li>
+<li>Tested five ControlNets (DepthAnything, LineArt, Canny, HED, Binary) and settled on depth with style 1.6 and form 1.0.</li>
+<li>Made the final series by keeping everything fixed and changing only the noise seed.</li>
+</ul>
+<h2>What the tests looked at</h2>
+<ul>
+<li>How much of the lamp's real shape survives when the style LoRA is turned up.</li>
+<li>Which kind of ControlNet keeps the form while letting the style change the material and light.</li>
+<li>How much one fixed setup varies from seed to seed.</li>
+</ul></article>
+  <aside><dl class="glance">
+  <div><dt>LoRAs</dt><dd>2</dd></div>
+  <div><dt>Base model</dt><dd>FLUX.1 [dev]</dd></div>
+  <div><dt>Trigger words</dt><dd><code>asdf style</code></dd></div>
+  <div><dt>Final images</dt><dd>12</dd></div>
+</dl></aside>
+</section>
+<section class="block wrap"><h2 class="section-label mono">Final images</h2><div class="gallery"><a class="g-item" href="../../assets/yewon-seo/final/01.jpg" data-w="2000" data-h="1256"><img src="../../assets/yewon-seo/final/01_t.jpg" alt="Render a Lamp, image 1" loading="lazy" width="2000" height="1256"></a><a class="g-item" href="../../assets/yewon-seo/final/02.jpg" data-w="2000" data-h="1256"><img src="../../assets/yewon-seo/final/02_t.jpg" alt="Render a Lamp, image 2" loading="lazy" width="2000" height="1256"></a><a class="g-item" href="../../assets/yewon-seo/final/03.jpg" data-w="2000" data-h="1256"><img src="../../assets/yewon-seo/final/03_t.jpg" alt="Render a Lamp, image 3" loading="lazy" width="2000" height="1256"></a><a class="g-item" href="../../assets/yewon-seo/final/04.jpg" data-w="2000" data-h="1256"><img src="../../assets/yewon-seo/final/04_t.jpg" alt="Render a Lamp, image 4" loading="lazy" width="2000" height="1256"></a><a class="g-item" href="../../assets/yewon-seo/final/05.jpg" data-w="2000" data-h="1256"><img src="../../assets/yewon-seo/final/05_t.jpg" alt="Render a Lamp, image 5" loading="lazy" width="2000" height="1256"></a><a class="g-item" href="../../assets/yewon-seo/final/06.jpg" data-w="2000" data-h="1256"><img src="../../assets/yewon-seo/final/06_t.jpg" alt="Render a Lamp, image 6" loading="lazy" width="2000" height="1256"></a><a class="g-item" href="../../assets/yewon-seo/final/07.jpg" data-w="2000" data-h="1256"><img src="../../assets/yewon-seo/final/07_t.jpg" alt="Render a Lamp, image 7" loading="lazy" width="2000" height="1256"></a><a class="g-item" href="../../assets/yewon-seo/final/08.jpg" data-w="2000" data-h="1256"><img src="../../assets/yewon-seo/final/08_t.jpg" alt="Render a Lamp, image 8" loading="lazy" width="2000" height="1256"></a><a class="g-item" href="../../assets/yewon-seo/final/09.jpg" data-w="2000" data-h="1256"><img src="../../assets/yewon-seo/final/09_t.jpg" alt="Render a Lamp, image 9" loading="lazy" width="2000" height="1256"></a><a class="g-item" href="../../assets/yewon-seo/final/10.jpg" data-w="2000" data-h="1256"><img src="../../assets/yewon-seo/final/10_t.jpg" alt="Render a Lamp, image 10" loading="lazy" width="2000" height="1256"></a><a class="g-item" href="../../assets/yewon-seo/final/11.jpg" data-w="2000" data-h="1256"><img src="../../assets/yewon-seo/final/11_t.jpg" alt="Render a Lamp, image 11" loading="lazy" width="2000" height="1256"></a><a class="g-item" href="../../assets/yewon-seo/final/12.jpg" data-w="2000" data-h="1256"><img src="../../assets/yewon-seo/final/12_t.jpg" alt="Render a Lamp, image 12" loading="lazy" width="2000" height="1256"></a></div></section>
+<div class="wrap"><section class="block"><h2 class="section-label mono">LoRAs</h2><div class="loras"><div class="lora">
+  <div class="lora-head"><h3 class="mono">asdf (style)</h3><span class="btn btn-off">Download soon</span></div>
+  <dl>
+    <div><dt>Trained on</dt><dd>Photographs of SANAA buildings: white, light, minimal</dd></div>
+    <div><dt>Trigger</dt><dd><code>asdf style</code></dd></div>
+    <div><dt>Strength used</dt><dd>1.6</dd></div>
+    <div><dt>File</dt><dd class="mono small break">FLUX 1_LORA_asdf.safetensors</dd></div>
+  </dl>
+</div><div class="lora">
+  <div class="lora-head"><h3 class="mono">qwer (form)</h3><span class="btn btn-off">Download soon</span></div>
+  <dl>
+    <div><dt>Trained on</dt><dd>Renders of Yewon's own S-shaped planter-lamp model</dd></div>
+    <div><dt>Trigger</dt><dd><span class="muted">none</span></dd></div>
+    <div><dt>Strength used</dt><dd>1.0</dd></div>
+    <div><dt>File</dt><dd class="mono small break">FLUX 1_LORA_qwer.safetensors</dd></div>
+  </dl>
+</div></div></section><section class="block"><h2 class="section-label mono">Dataset</h2><div class="dataset">
+  <p>27 photographs of SANAA buildings (Zollverein School, Kanazawa, Rolex Learning Center, Grace Farms and others; full credits in the review slides)</p>
+  <p class="muted small">Precise captions describing light, materials and object positions</p>
+  <div class="thumbs"><img src="../../assets/yewon-seo/style-sanaa/01.jpg" alt="" loading="lazy"><img src="../../assets/yewon-seo/style-sanaa/02.jpg" alt="" loading="lazy"><img src="../../assets/yewon-seo/style-sanaa/03.jpg" alt="" loading="lazy"><img src="../../assets/yewon-seo/style-sanaa/04.jpg" alt="" loading="lazy"><img src="../../assets/yewon-seo/style-sanaa/05.jpg" alt="" loading="lazy"><img src="../../assets/yewon-seo/style-sanaa/06.jpg" alt="" loading="lazy"><img src="../../assets/yewon-seo/style-sanaa/07.jpg" alt="" loading="lazy"><img src="../../assets/yewon-seo/style-sanaa/08.jpg" alt="" loading="lazy"><img src="../../assets/yewon-seo/style-sanaa/09.jpg" alt="" loading="lazy"><img src="../../assets/yewon-seo/style-sanaa/10.jpg" alt="" loading="lazy"><img src="../../assets/yewon-seo/style-sanaa/11.jpg" alt="" loading="lazy"><img src="../../assets/yewon-seo/style-sanaa/12.jpg" alt="" loading="lazy"></div>
+  <blockquote>Minimalist white interior hall, floor-to-ceiling sheer curtains diffusing natural light through tall windows, rows of grey chairs arranged in two groups, single cylindrical white column at 3/5 point from the left end of the image, ethereal luminous atmosphere, architectural photography, grey concrete floor, silhouette of trees outside the window</blockquote><blockquote>Narrow white-walled courtyard alley, irregular window cutouts at angles, potted plants and bamboo ladder leaning against wall, small garden bed with grass planted, Japanese minimalist residential architecture, soft overcast daylight, editorial photography</blockquote>
+  <a class="small" href="../../assets/yewon-seo/style-sanaa-captions.txt">All 27 captions (.txt)</a>
+</div><div class="dataset">
+  <p>30 renders of Yewon's own Rhino model of the planter lamp (ProtoLiO Growing Light)</p>
+  <p class="muted small">Captions describing each loop, cut-out and viewing angle</p>
+  <div class="thumbs"><img src="../../assets/yewon-seo/form-lamp/01.jpg" alt="" loading="lazy"><img src="../../assets/yewon-seo/form-lamp/02.jpg" alt="" loading="lazy"><img src="../../assets/yewon-seo/form-lamp/03.jpg" alt="" loading="lazy"><img src="../../assets/yewon-seo/form-lamp/04.jpg" alt="" loading="lazy"><img src="../../assets/yewon-seo/form-lamp/05.jpg" alt="" loading="lazy"><img src="../../assets/yewon-seo/form-lamp/06.jpg" alt="" loading="lazy"><img src="../../assets/yewon-seo/form-lamp/07.jpg" alt="" loading="lazy"><img src="../../assets/yewon-seo/form-lamp/08.jpg" alt="" loading="lazy"><img src="../../assets/yewon-seo/form-lamp/09.jpg" alt="" loading="lazy"><img src="../../assets/yewon-seo/form-lamp/10.jpg" alt="" loading="lazy"><img src="../../assets/yewon-seo/form-lamp/11.jpg" alt="" loading="lazy"><img src="../../assets/yewon-seo/form-lamp/12.jpg" alt="" loading="lazy"></div>
+  <blockquote>3D render of a zigzag S-curve sculptural architectural massing model, three interlocking rounded rectangular loop volumes alternating left and right, flat square base plinth, viewed from slight left angle, matte white material, soft shadow, white background, clean product visualization</blockquote><blockquote>3D render of a zigzag S-curve sculptural massing model, three alternating rounded loop volumes with oval cutthrough openings, flat square base, viewed from right front angle, matte white material, soft cast shadow, white background</blockquote>
+  <a class="small" href="../../assets/yewon-seo/form-lamp-captions.txt">All 30 captions (.txt)</a>
+</div></section><section class="block"><h2 class="section-label mono">Try it</h2><div class="prompt"><p class="mono small">Photo of a plant pot with a growing light. S-shaped body holds the earth inside and has a lighting panel on the top. Ivy is planted inside, which is sealed with a translucent sheet… asdf style — style 1.6, form 1.0, DepthAnything ControlNet</p><button class="copy mono small" type="button">Copy</button></div></section></div>
+<nav class="wrap pager-bottom mono small"><a href="../tamer-tubishat/">← Lithic Hospitality</a><a href="../angelica-facey/">Memory →</a></nav>
+<footer class="foot wrap">
+  <div>ARCH 507 — Generative AI: Thinking and Designing with Machine Intelligence<br>University of Michigan, Taubman College of Architecture and Urban Planning · Winter 2026</div>
+  <div>Instructor: Ishan Pal Singh</div>
+  <div class="foot-note">Student work shared for education and research. LoRAs are free for non-commercial use with credit to the student. Datasets built from other people's images are shown as captions and small thumbnails only.</div>
+</footer>
+<script src="../../site.js"></script>
+</body>
+</html>

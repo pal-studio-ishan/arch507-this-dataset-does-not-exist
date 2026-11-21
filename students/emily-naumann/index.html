@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>le_zine — Emily Naumann</title>
+<meta name="description" content="Three LoRAs trained on film, old magazines and photography, to pull AI images back toward real design.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../site.css">
+</head>
+<body>
+
+<header class="top wrap">
+  <a class="mono small" href="../../">← All projects</a>
+  <nav class="mono small pager"><a href="../arushi-chopra/">← Arushi Chopra</a><a href="../frank-michel/">Frank Michel →</a></nav>
+</header>
+<section class="p-hero wrap">
+  <p class="mono small muted">Emily Naumann</p>
+  <h1>le_zine</h1>
+  <p class="lede">Three LoRAs trained on film, old magazines and photography, to pull AI images back toward real design.</p>
+</section>
+<div class="p-cover wrap"><img src="../../assets/emily-naumann/final/12.jpg" alt=""></div>
+<section class="p-body wrap">
+  <article class="prose"><h2>The question</h2>
+<p>Popular models make sleek, futuristic images that read as AI right away and often carry little design value. Emily wanted the retro feel of a late-20th-century architecture magazine. A quick test showed the gap: adding "in the style of an 1980s architecture magazine" to a prompt barely changed the image, but a LoRA changed it immediately.</p>
+<h2>What they did</h2>
+<ul>
+<li>Trained three LoRAs on "archaic" media: stills from <em>Phantom Thread</em> (<strong>hoos</strong>), 1970s–90s magazine photography (<strong>disasterpiece</strong>), and the photographers Josef Sudek and Saul Leiter (<strong>minm</strong>).</li>
+<li>Ran the same prompt, a Japanese-inspired bedroom, through each LoRA. Emily repeated it with a thesis collage of their own as a reference image, then in pairs, then with longer and longer prompts.</li>
+</ul>
+<h2>What they found</h2>
+<ul>
+<li>The magazine LoRA came closest to what Emily wanted, but its bias was strong. It overrode prompts and echoed famous projects in the dataset (Maison de Verre), which made truly new designs hard.</li>
+<li>The Sudek/Leiter LoRA was the most flexible. It added a distinctive blur and grain without changing the space, so it worked with any prompt.</li>
+<li>The film LoRA caught the movie's mood at high strength (~2) but didn't carry over easily into architecture.</li>
+<li>The LoRAs didn't combine the way Emily hoped (one's palette with another's composition). Even so, all three were more useful to Emily than the base model.</li>
+</ul></article>
+  <aside><dl class="glance">
+  <div><dt>LoRAs</dt><dd>3</dd></div>
+  <div><dt>Base model</dt><dd>FLUX.1 [dev]</dd></div>
+  <div><dt>Trigger words</dt><dd><code>in the style of hoos</code>, <code>in the style of disasterpiece</code>, <code>in the style of minm</code></dd></div>
+  <div><dt>Final images</dt><dd>12</dd></div>
+</dl></aside>
+</section>
+<section class="block wrap"><h2 class="section-label mono">Final images</h2><div class="gallery"><a class="g-item" href="../../assets/emily-naumann/final/01.jpg" data-w="1920" data-h="1088"><img src="../../assets/emily-naumann/final/01_t.jpg" alt="le_zine, image 1" loading="lazy" width="1920" height="1088"></a><a class="g-item" href="../../assets/emily-naumann/final/02.jpg" data-w="1920" data-h="1088"><img src="../../assets/emily-naumann/final/02_t.jpg" alt="le_zine, image 2" loading="lazy" width="1920" height="1088"></a><a class="g-item" href="../../assets/emily-naumann/final/03.jpg" data-w="1920" data-h="1088"><img src="../../assets/emily-naumann/final/03_t.jpg" alt="le_zine, image 3" loading="lazy" width="1920" height="1088"></a><a class="g-item" href="../../assets/emily-naumann/final/04.jpg" data-w="1448" data-h="960"><img src="../../assets/emily-naumann/final/04_t.jpg" alt="le_zine, image 4" loading="lazy" width="1448" height="960"></a><a class="g-item" href="../../assets/emily-naumann/final/05.jpg" data-w="1448" data-h="960"><img src="../../assets/emily-naumann/final/05_t.jpg" alt="le_zine, image 5" loading="lazy" width="1448" height="960"></a><a class="g-item" href="../../assets/emily-naumann/final/06.jpg" data-w="1448" data-h="960"><img src="../../assets/emily-naumann/final/06_t.jpg" alt="le_zine, image 6" loading="lazy" width="1448" height="960"></a><a class="g-item" href="../../assets/emily-naumann/final/07.jpg" data-w="1920" data-h="1088"><img src="../../assets/emily-naumann/final/07_t.jpg" alt="le_zine, image 7" loading="lazy" width="1920" height="1088"></a><a class="g-item" href="../../assets/emily-naumann/final/08.jpg" data-w="1920" data-h="1088"><img src="../../assets/emily-naumann/final/08_t.jpg" alt="le_zine, image 8" loading="lazy" width="1920" height="1088"></a><a class="g-item" href="../../assets/emily-naumann/final/09.jpg" data-w="1920" data-h="1088"><img src="../../assets/emily-naumann/final/09_t.jpg" alt="le_zine, image 9" loading="lazy" width="1920" height="1088"></a><a class="g-item" href="../../assets/emily-naumann/final/10.jpg" data-w="960" data-h="544"><img src="../../assets/emily-naumann/final/10_t.jpg" alt="le_zine, image 10" loading="lazy" width="960" height="544"></a><a class="g-item" href="../../assets/emily-naumann/final/11.jpg" data-w="960" data-h="544"><img src="../../assets/emily-naumann/final/11_t.jpg" alt="le_zine, image 11" loading="lazy" width="960" height="544"></a><a class="g-item" href="../../assets/emily-naumann/final/12.jpg" data-w="1360" data-h="768"><img src="../../assets/emily-naumann/final/12_t.jpg" alt="le_zine, image 12" loading="lazy" width="1360" height="768"></a></div></section>
+<div class="wrap"><section class="block"><h2 class="section-label mono">LoRAs</h2><div class="loras"><div class="lora">
+  <div class="lora-head"><h3 class="mono">hoos</h3><span class="btn btn-off">Download soon</span></div>
+  <dl>
+    <div><dt>Trained on</dt><dd>Stills from the film <em>Phantom Thread</em></dd></div>
+    <div><dt>Trigger</dt><dd><code>in the style of hoos</code></dd></div>
+    <div><dt>Strength used</dt><dd>1.25–2</dd></div>
+    <div><dt>File</dt><dd class="mono small break">hoos.safetensors</dd></div>
+  </dl>
+</div><div class="lora">
+  <div class="lora-head"><h3 class="mono">disasterpiece</h3><span class="btn btn-off">Download soon</span></div>
+  <dl>
+    <div><dt>Trained on</dt><dd>1970s–90s architecture magazine photography</dd></div>
+    <div><dt>Trigger</dt><dd><code>in the style of disasterpiece</code></dd></div>
+    <div><dt>Strength used</dt><dd>1.25–2</dd></div>
+    <div><dt>File</dt><dd class="mono small break">disasterpiece.safetensors</dd></div>
+  </dl>
+</div><div class="lora">
+  <div class="lora-head"><h3 class="mono">minm</h3><span class="btn btn-off">Download soon</span></div>
+  <dl>
+    <div><dt>Trained on</dt><dd>Photographs by Josef Sudek and Saul Leiter</dd></div>
+    <div><dt>Trigger</dt><dd><code>in the style of minm</code></dd></div>
+    <div><dt>Strength used</dt><dd>1.25</dd></div>
+    <div><dt>File</dt><dd class="mono small break">minm</dd></div>
+  </dl>
+</div></div></section><section class="block"><h2 class="section-label mono">Dataset</h2><div class="dataset">
+  <p>12 film stills chosen for composition and colour</p>
+  <p class="muted small">Short captions (RTF files)</p>
+  <div class="thumbs"><img src="../../assets/emily-naumann/hoos/01.jpg" alt="" loading="lazy"><img src="../../assets/emily-naumann/hoos/02.jpg" alt="" loading="lazy"><img src="../../assets/emily-naumann/hoos/03.jpg" alt="" loading="lazy"><img src="../../assets/emily-naumann/hoos/04.jpg" alt="" loading="lazy"><img src="../../assets/emily-naumann/hoos/05.jpg" alt="" loading="lazy"><img src="../../assets/emily-naumann/hoos/06.jpg" alt="" loading="lazy"><img src="../../assets/emily-naumann/hoos/07.jpg" alt="" loading="lazy"><img src="../../assets/emily-naumann/hoos/08.jpg" alt="" loading="lazy"><img src="../../assets/emily-naumann/hoos/09.jpg" alt="" loading="lazy"><img src="../../assets/emily-naumann/hoos/10.jpg" alt="" loading="lazy"><img src="../../assets/emily-naumann/hoos/11.jpg" alt="" loading="lazy"><img src="../../assets/emily-naumann/hoos/12.jpg" alt="" loading="lazy"></div>
+  <blockquote>A quiet moment between a seated guest and a waitress in a charming countryside inn, with a misty lake valley stretching out behind them.</blockquote><blockquote>A quiet coastal road runs past a row of Victorian red-brick buildings, the largest bearing the faded painted sign VICTORIA HOTEL FREE HOUSE . A lone figure stands with their back to us along a wooden railing, gazing out at the estuary that stretches silver and still into the misty hills beyond. A vintage car rounds the bend below, and further along the path, two more figures linger. The whole scene carries the partic…</blockquote>
+  <a class="small" href="../../assets/emily-naumann/hoos-captions.txt">All 12 captions (.txt)</a>
+</div><div class="dataset">
+  <p>18 photographs of architecture from 1970s–90s publications</p>
+  <p class="muted small">Short captions (RTF files)</p>
+  <div class="thumbs"><img src="../../assets/emily-naumann/disasterpiece/01.jpg" alt="" loading="lazy"><img src="../../assets/emily-naumann/disasterpiece/02.jpg" alt="" loading="lazy"><img src="../../assets/emily-naumann/disasterpiece/03.jpg" alt="" loading="lazy"><img src="../../assets/emily-naumann/disasterpiece/04.jpg" alt="" loading="lazy"><img src="../../assets/emily-naumann/disasterpiece/05.jpg" alt="" loading="lazy"><img src="../../assets/emily-naumann/disasterpiece/06.jpg" alt="" loading="lazy"><img src="../../assets/emily-naumann/disasterpiece/07.jpg" alt="" loading="lazy"><img src="../../assets/emily-naumann/disasterpiece/08.jpg" alt="" loading="lazy"><img src="../../assets/emily-naumann/disasterpiece/09.jpg" alt="" loading="lazy"><img src="../../assets/emily-naumann/disasterpiece/10.jpg" alt="" loading="lazy"><img src="../../assets/emily-naumann/disasterpiece/11.jpg" alt="" loading="lazy"><img src="../../assets/emily-naumann/disasterpiece/12.jpg" alt="" loading="lazy"></div>
+  <blockquote>A sun-drenched studio interior looks out onto a lush, overgrown garden through a grand floor-to-ceiling window, where a simple wooden table, rush-seat chairs, and an antique lectern rest quietly on wide-plank floors.</blockquote><blockquote>A couple sits together on a richly layered living space filled with vibrant textiles, global curiosities, and iconic mid-century furnishings inside a soaring, light-filled home that feels equal parts design manifesto and well-lived-in sanctuary.</blockquote>
+  <a class="small" href="../../assets/emily-naumann/disasterpiece-captions.txt">All 18 captions (.txt)</a>
+</div><div class="dataset">
+  <p>16 photographs by Josef Sudek (black and white) and Saul Leiter (subtle colour)</p>
+  <p class="muted small">Short captions (RTF files)</p>
+  <div class="thumbs"><img src="../../assets/emily-naumann/minm/01.jpg" alt="" loading="lazy"><img src="../../assets/emily-naumann/minm/02.jpg" alt="" loading="lazy"><img src="../../assets/emily-naumann/minm/03.jpg" alt="" loading="lazy"><img src="../../assets/emily-naumann/minm/04.jpg" alt="" loading="lazy"><img src="../../assets/emily-naumann/minm/05.jpg" alt="" loading="lazy"><img src="../../assets/emily-naumann/minm/06.jpg" alt="" loading="lazy"><img src="../../assets/emily-naumann/minm/07.jpg" alt="" loading="lazy"><img src="../../assets/emily-naumann/minm/08.jpg" alt="" loading="lazy"><img src="../../assets/emily-naumann/minm/09.jpg" alt="" loading="lazy"><img src="../../assets/emily-naumann/minm/10.jpg" alt="" loading="lazy"><img src="../../assets/emily-naumann/minm/11.jpg" alt="" loading="lazy"><img src="../../assets/emily-naumann/minm/12.jpg" alt="" loading="lazy"></div>
+  <blockquote>a monochromatic photo of a stone cathedral with visible light rays streaming in from windows beyond a set of gothic arches. the photo is taken from above, looking down on some workers doing construction in between the bays of the arches.</blockquote><blockquote>An image that could be a photograph or a drawing of a gothic arch in a stone cathedral which is bathed in natural light in the background, framed by dark columns. There are remnants of large stone pieces in the dark foreground.</blockquote>
+  <a class="small" href="../../assets/emily-naumann/minm-captions.txt">All 16 captions (.txt)</a>
+</div></section><section class="block"><h2 class="section-label mono">Try it</h2><div class="prompt"><p class="mono small">cinematic architecture magazine photograph of a library carved into a desert cliff outside Marrakech, designed in the spirit of Luis Barragán and Tadao Ando… In the style of disasterpiece</p><button class="copy mono small" type="button">Copy</button></div></section></div>
+<nav class="wrap pager-bottom mono small"><a href="../arushi-chopra/">← Bambu</a><a href="../frank-michel/">1970s Soviet Interiors →</a></nav>
+<footer class="foot wrap">
+  <div>ARCH 507 — Generative AI: Thinking and Designing with Machine Intelligence<br>University of Michigan, Taubman College of Architecture and Urban Planning · Winter 2026</div>
+  <div>Instructor: Ishan Pal Singh</div>
+  <div class="foot-note">Student work shared for education and research. LoRAs are free for non-commercial use with credit to the student. Datasets built from other people's images are shown as captions and small thumbnails only.</div>
+</footer>
+<script src="../../site.js"></script>
+</body>
+</html>

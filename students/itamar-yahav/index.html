@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>pencil_drawing — Itamar Yahav</title>
+<meta name="description" content="A failed render LoRA, then a pencil-drawing LoRA that imagines the sustainable buildings of tomorrow.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../site.css">
+</head>
+<body>
+
+<header class="top wrap">
+  <a class="mono small" href="../../">← All projects</a>
+  <nav class="mono small pager"><a href="../hua-lin/">← Hua Lin (Dylan)</a><a href="../jack-barbour/">Jack Barbour →</a></nav>
+</header>
+<section class="p-hero wrap">
+  <p class="mono small muted">Itamar Yahav</p>
+  <h1>pencil_drawing</h1>
+  <p class="lede">A failed render LoRA, then a pencil-drawing LoRA that imagines the sustainable buildings of tomorrow.</p>
+</section>
+<div class="p-cover wrap"><img src="../../assets/itamar-yahav/final/01.jpg" alt=""></div>
+<section class="p-body wrap">
+  <article class="prose"><h2>The question</h2>
+<p>Itamar first wanted a LoRA that could turn any Rhino model into a render in the style of the visualisation studio Internoesterno. That style was too close to what Flux already does, and the images looked the same with or without the LoRA. So Itamar switched to a style Flux can't produce: fine architectural pencil drawings. The new LoRA became a way to ask a new question, prompted by a lecture by Cas Esbach and a history class on halting new construction: what does AI think truly sustainable architecture looks like?</p>
+<h2>What they did</h2>
+<ul>
+<li>Collected 25 pencil drawings, mostly isometrics of rural and corroded buildings. A Python script resized and renamed them, and Claude wrote the captions.</li>
+<li>Trained the LoRA with the trigger word <code>pencil_drawing</code>, then tested it on barns, schools and column details at different strengths.</li>
+<li>Generated twelve "sustainable futures": a net-zero home, a shopping centre, a vertical city, a floating community, an underground complex, a desert city, Archigram-style housing, a transport hub. Itamar ran each through an upscale pass.</li>
+</ul>
+<h2>What they found</h2>
+<ul>
+<li>The first LoRA was too generic to matter, a useful lesson in picking a style the model doesn't already know.</li>
+<li>The pencil LoRA produced ideas Itamar didn't expect and couldn't have come up with alone.</li>
+<li>Itamar's takeaways: be patient, since this is a lot of trial and error, and use AI to make something new rather than repeat what already exists.</li>
+</ul></article>
+  <aside><dl class="glance">
+  <div><dt>LoRAs</dt><dd>2</dd></div>
+  <div><dt>Base model</dt><dd>FLUX.1 [dev]</dd></div>
+  <div><dt>Trigger words</dt><dd><code>pencil_drawing</code>, <code>peptides style</code></dd></div>
+  <div><dt>Final images</dt><dd>12</dd></div>
+</dl></aside>
+</section>
+<section class="block wrap"><h2 class="section-label mono">Final images</h2><div class="gallery"><a class="g-item" href="../../assets/itamar-yahav/final/01.jpg" data-w="2000" data-h="2000"><img src="../../assets/itamar-yahav/final/01_t.jpg" alt="pencil_drawing, image 1" loading="lazy" width="2000" height="2000"></a><a class="g-item" href="../../assets/itamar-yahav/final/02.jpg" data-w="2000" data-h="2000"><img src="../../assets/itamar-yahav/final/02_t.jpg" alt="pencil_drawing, image 2" loading="lazy" width="2000" height="2000"></a><a class="g-item" href="../../assets/itamar-yahav/final/03.jpg" data-w="2000" data-h="2000"><img src="../../assets/itamar-yahav/final/03_t.jpg" alt="pencil_drawing, image 3" loading="lazy" width="2000" height="2000"></a><a class="g-item" href="../../assets/itamar-yahav/final/04.jpg" data-w="2000" data-h="2000"><img src="../../assets/itamar-yahav/final/04_t.jpg" alt="pencil_drawing, image 4" loading="lazy" width="2000" height="2000"></a><a class="g-item" href="../../assets/itamar-yahav/final/05.jpg" data-w="2000" data-h="2000"><img src="../../assets/itamar-yahav/final/05_t.jpg" alt="pencil_drawing, image 5" loading="lazy" width="2000" height="2000"></a><a class="g-item" href="../../assets/itamar-yahav/final/06.jpg" data-w="2000" data-h="2000"><img src="../../assets/itamar-yahav/final/06_t.jpg" alt="pencil_drawing, image 6" loading="lazy" width="2000" height="2000"></a><a class="g-item" href="../../assets/itamar-yahav/final/07.jpg" data-w="2000" data-h="2000"><img src="../../assets/itamar-yahav/final/07_t.jpg" alt="pencil_drawing, image 7" loading="lazy" width="2000" height="2000"></a><a class="g-item" href="../../assets/itamar-yahav/final/08.jpg" data-w="2000" data-h="2000"><img src="../../assets/itamar-yahav/final/08_t.jpg" alt="pencil_drawing, image 8" loading="lazy" width="2000" height="2000"></a><a class="g-item" href="../../assets/itamar-yahav/final/09.jpg" data-w="2000" data-h="2000"><img src="../../assets/itamar-yahav/final/09_t.jpg" alt="pencil_drawing, image 9" loading="lazy" width="2000" height="2000"></a><a class="g-item" href="../../assets/itamar-yahav/final/10.jpg" data-w="2000" data-h="2000"><img src="../../assets/itamar-yahav/final/10_t.jpg" alt="pencil_drawing, image 10" loading="lazy" width="2000" height="2000"></a><a class="g-item" href="../../assets/itamar-yahav/final/11.jpg" data-w="2000" data-h="2000"><img src="../../assets/itamar-yahav/final/11_t.jpg" alt="pencil_drawing, image 11" loading="lazy" width="2000" height="2000"></a><a class="g-item" href="../../assets/itamar-yahav/final/12.jpg" data-w="2000" data-h="2000"><img src="../../assets/itamar-yahav/final/12_t.jpg" alt="pencil_drawing, image 12" loading="lazy" width="2000" height="2000"></a></div></section>
+<div class="wrap"><section class="block"><h2 class="section-label mono">LoRAs</h2><div class="loras"><div class="lora">
+  <div class="lora-head"><h3 class="mono">pencil_drawing</h3><span class="btn btn-off">Download soon</span></div>
+  <dl>
+    <div><dt>Trained on</dt><dd>Architectural pencil drawings, mostly isometrics of rural and worn structures</dd></div>
+    <div><dt>Trigger</dt><dd><code>pencil_drawing</code></dd></div>
+    <div><dt>Strength used</dt><dd>1.0 (0.8–1.25)</dd></div>
+    <div><dt>File</dt><dd class="mono small break">pencil_drawing.safetensors</dd></div>
+  </dl>
+</div><div class="lora">
+  <div class="lora-head"><h3 class="mono">peptides (first try)</h3><span class="btn btn-off">Download soon</span></div>
+  <dl>
+    <div><dt>Trained on</dt><dd>Architectural visualisation renders</dd></div>
+    <div><dt>Trigger</dt><dd><code>peptides style</code></dd></div>
+    <div><dt>Strength used</dt><dd><span class="muted">not stated</span></dd></div>
+    <div><dt>File</dt><dd class="mono small break">peptides_flux.safetensors</dd></div>
+  </dl>
+</div></div></section><section class="block"><h2 class="section-label mono">Dataset</h2><div class="dataset">
+  <p>25 architectural pencil drawings, mostly isometrics, collected on Pinterest</p>
+  <p class="muted small">Captions written with Claude (the caption files weren't included with the dataset)</p>
+  <div class="thumbs"><img src="../../assets/itamar-yahav/pencil-drawing/01.jpg" alt="" loading="lazy"><img src="../../assets/itamar-yahav/pencil-drawing/02.jpg" alt="" loading="lazy"><img src="../../assets/itamar-yahav/pencil-drawing/03.jpg" alt="" loading="lazy"><img src="../../assets/itamar-yahav/pencil-drawing/04.jpg" alt="" loading="lazy"><img src="../../assets/itamar-yahav/pencil-drawing/05.jpg" alt="" loading="lazy"><img src="../../assets/itamar-yahav/pencil-drawing/06.jpg" alt="" loading="lazy"><img src="../../assets/itamar-yahav/pencil-drawing/07.jpg" alt="" loading="lazy"><img src="../../assets/itamar-yahav/pencil-drawing/08.jpg" alt="" loading="lazy"><img src="../../assets/itamar-yahav/pencil-drawing/09.jpg" alt="" loading="lazy"><img src="../../assets/itamar-yahav/pencil-drawing/10.jpg" alt="" loading="lazy"><img src="../../assets/itamar-yahav/pencil-drawing/11.jpg" alt="" loading="lazy"><img src="../../assets/itamar-yahav/pencil-drawing/12.jpg" alt="" loading="lazy"></div>
+  
+  
+</div><div class="dataset">
+  <p>15 renders used for the first, abandoned LoRA</p>
+  <p class="muted small">Detailed captions</p>
+  <div class="thumbs"><img src="../../assets/itamar-yahav/renders-first-try/01.jpg" alt="" loading="lazy"><img src="../../assets/itamar-yahav/renders-first-try/02.jpg" alt="" loading="lazy"><img src="../../assets/itamar-yahav/renders-first-try/03.jpg" alt="" loading="lazy"><img src="../../assets/itamar-yahav/renders-first-try/04.jpg" alt="" loading="lazy"><img src="../../assets/itamar-yahav/renders-first-try/05.jpg" alt="" loading="lazy"><img src="../../assets/itamar-yahav/renders-first-try/06.jpg" alt="" loading="lazy"><img src="../../assets/itamar-yahav/renders-first-try/07.jpg" alt="" loading="lazy"><img src="../../assets/itamar-yahav/renders-first-try/08.jpg" alt="" loading="lazy"><img src="../../assets/itamar-yahav/renders-first-try/09.jpg" alt="" loading="lazy"><img src="../../assets/itamar-yahav/renders-first-try/10.jpg" alt="" loading="lazy"><img src="../../assets/itamar-yahav/renders-first-try/11.jpg" alt="" loading="lazy"><img src="../../assets/itamar-yahav/renders-first-try/12.jpg" alt="" loading="lazy"></div>
+  <blockquote>cyberpunk cityscape, dystopian megacity, futuristic urban environment, towering skyscrapers, brutalist architecture, glass and steel high-rise buildings, neon signs, LED billboards, holographic displays, red neon lighting, pink neon accents, blue neon trim, dramatic sunset sky, deep crimson sky, fiery orange atmosphere, volumetric clouds, glowing sun orb, sun flare, golden hour lighting, god rays, atmospheric haze, w…</blockquote>
+  <a class="small" href="../../assets/itamar-yahav/renders-first-try-captions.txt">All 15 captions (.txt)</a>
+</div></section><section class="block"><h2 class="section-label mono">Try it</h2><div class="prompt"><p class="mono small">pencil_drawing of a desert city shaped entirely by shade, airflow, and human comfort</p><button class="copy mono small" type="button">Copy</button></div></section></div>
+<nav class="wrap pager-bottom mono small"><a href="../hua-lin/">← 2.5D World</a><a href="../jack-barbour/">Future Facades →</a></nav>
+<footer class="foot wrap">
+  <div>ARCH 507 — Generative AI: Thinking and Designing with Machine Intelligence<br>University of Michigan, Taubman College of Architecture and Urban Planning · Winter 2026</div>
+  <div>Instructor: Ishan Pal Singh</div>
+  <div class="foot-note">Student work shared for education and research. LoRAs are free for non-commercial use with credit to the student. Datasets built from other people's images are shown as captions and small thumbnails only.</div>
+</footer>
+<script src="../../site.js"></script>
+</body>
+</html>

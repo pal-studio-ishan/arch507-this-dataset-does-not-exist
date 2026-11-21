@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Future Facades — Jack Barbour</title>
+<meta name="description" content="Two LoRAs to get parametric brick facades with bricks at the right scale.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../site.css">
+</head>
+<body>
+
+<header class="top wrap">
+  <a class="mono small" href="../../">← All projects</a>
+  <nav class="mono small pager"><a href="../itamar-yahav/">← Itamar Yahav</a><a href="../jack-smith/">Jack Smith →</a></nav>
+</header>
+<section class="p-hero wrap">
+  <p class="mono small muted">Jack Barbour</p>
+  <h1>Future Facades</h1>
+  <p class="lede">Two LoRAs to get parametric brick facades with bricks at the right scale.</p>
+</section>
+<div class="p-cover wrap"><img src="../../assets/jack-barbour/final/04.jpg" alt=""></div>
+<section class="p-body wrap">
+  <article class="prose"><h2>The question</h2>
+<p>Ask a mainstream model for "a parametric brick facade" and you get bricks that are stretched and too thin, on forms that could never be built. Jack wanted facades with real brick scale and some constructive logic.</p>
+<h2>What they did</h2>
+<ul>
+<li>Trained a first LoRA on close-ups of parametric brick facades, chosen to show correct brick size and coursing.</li>
+<li>That alone gave abstract brick patterns, not buildings. So Jack trained a second LoRA on freestanding brick buildings shown with the ground and sky.</li>
+<li>Ran both LoRAs together at 1.2 and refined the prompt step by step, from "brick facade on a building" to a full description of the site, the windows and the cantilevers.</li>
+</ul>
+<h2>What they found</h2>
+<ul>
+<li>More steps didn't help much. Prompt work and the second LoRA did.</li>
+<li>The final images show coherent buildings with expressive brick facades and a believable sense of brick scale, which general-purpose models lack.</li>
+<li>Getting there took careful dataset curation and many prompt iterations. Purpose-built architectural datasets could make AI images far more reliable.</li>
+</ul></article>
+  <aside><dl class="glance">
+  <div><dt>LoRAs</dt><dd>2</dd></div>
+  <div><dt>Base model</dt><dd>FLUX.1 [dev]</dd></div>
+  <div><dt>Trigger words</dt><dd><span class="muted">none</span></dd></div>
+  <div><dt>Final images</dt><dd>12</dd></div>
+</dl></aside>
+</section>
+<section class="block wrap"><h2 class="section-label mono">Final images</h2><div class="gallery"><a class="g-item" href="../../assets/jack-barbour/final/01.jpg" data-w="1920" data-h="1088"><img src="../../assets/jack-barbour/final/01_t.jpg" alt="Future Facades, image 1" loading="lazy" width="1920" height="1088"></a><a class="g-item" href="../../assets/jack-barbour/final/02.jpg" data-w="1920" data-h="1088"><img src="../../assets/jack-barbour/final/02_t.jpg" alt="Future Facades, image 2" loading="lazy" width="1920" height="1088"></a><a class="g-item" href="../../assets/jack-barbour/final/03.jpg" data-w="1920" data-h="1088"><img src="../../assets/jack-barbour/final/03_t.jpg" alt="Future Facades, image 3" loading="lazy" width="1920" height="1088"></a><a class="g-item" href="../../assets/jack-barbour/final/04.jpg" data-w="1920" data-h="1088"><img src="../../assets/jack-barbour/final/04_t.jpg" alt="Future Facades, image 4" loading="lazy" width="1920" height="1088"></a><a class="g-item" href="../../assets/jack-barbour/final/05.jpg" data-w="1920" data-h="1088"><img src="../../assets/jack-barbour/final/05_t.jpg" alt="Future Facades, image 5" loading="lazy" width="1920" height="1088"></a><a class="g-item" href="../../assets/jack-barbour/final/06.jpg" data-w="1920" data-h="1088"><img src="../../assets/jack-barbour/final/06_t.jpg" alt="Future Facades, image 6" loading="lazy" width="1920" height="1088"></a><a class="g-item" href="../../assets/jack-barbour/final/07.jpg" data-w="1920" data-h="1088"><img src="../../assets/jack-barbour/final/07_t.jpg" alt="Future Facades, image 7" loading="lazy" width="1920" height="1088"></a><a class="g-item" href="../../assets/jack-barbour/final/08.jpg" data-w="1920" data-h="1088"><img src="../../assets/jack-barbour/final/08_t.jpg" alt="Future Facades, image 8" loading="lazy" width="1920" height="1088"></a><a class="g-item" href="../../assets/jack-barbour/final/09.jpg" data-w="1920" data-h="1088"><img src="../../assets/jack-barbour/final/09_t.jpg" alt="Future Facades, image 9" loading="lazy" width="1920" height="1088"></a><a class="g-item" href="../../assets/jack-barbour/final/10.jpg" data-w="1920" data-h="1088"><img src="../../assets/jack-barbour/final/10_t.jpg" alt="Future Facades, image 10" loading="lazy" width="1920" height="1088"></a><a class="g-item" href="../../assets/jack-barbour/final/11.jpg" data-w="1920" data-h="1088"><img src="../../assets/jack-barbour/final/11_t.jpg" alt="Future Facades, image 11" loading="lazy" width="1920" height="1088"></a><a class="g-item" href="../../assets/jack-barbour/final/12.jpg" data-w="1920" data-h="1088"><img src="../../assets/jack-barbour/final/12_t.jpg" alt="Future Facades, image 12" loading="lazy" width="1920" height="1088"></a></div></section>
+<div class="wrap"><section class="block"><h2 class="section-label mono">LoRAs</h2><div class="loras"><div class="lora">
+  <div class="lora-head"><h3 class="mono">Brick buildings</h3><span class="btn btn-off">Download soon</span></div>
+  <dl>
+    <div><dt>Trained on</dt><dd>Freestanding brick buildings with ground and sky</dd></div>
+    <div><dt>Trigger</dt><dd><span class="muted">none</span></dd></div>
+    <div><dt>Strength used</dt><dd>1.2</dd></div>
+    <div><dt>File</dt><dd class="mono small break">bnajS-FZIGxwpbwttX7GC_pytorch_lora_weights.safetensors</dd></div>
+  </dl>
+</div><div class="lora">
+  <div class="lora-head"><h3 class="mono">Brick facade close-ups</h3><span class="btn btn-off">Download soon</span></div>
+  <dl>
+    <div><dt>Trained on</dt><dd>Close-ups of parametric brick facades</dd></div>
+    <div><dt>Trigger</dt><dd><span class="muted">none</span></dd></div>
+    <div><dt>Strength used</dt><dd>1.2</dd></div>
+    <div><dt>File</dt><dd class="mono small break">Kz94z-4KsFaMTVGdWZotT_pytorch_lora_weights.safetensors</dd></div>
+  </dl>
+</div></div></section><section class="block"><h2 class="section-label mono">Dataset</h2><div class="dataset">
+  <p>16 close-up photographs of parametric brick facades, chosen for correct brick scale</p>
+  <p class="muted small">No captions</p>
+  <div class="thumbs"><img src="../../assets/jack-barbour/facade-closeups/01.jpg" alt="" loading="lazy"><img src="../../assets/jack-barbour/facade-closeups/02.jpg" alt="" loading="lazy"><img src="../../assets/jack-barbour/facade-closeups/03.jpg" alt="" loading="lazy"><img src="../../assets/jack-barbour/facade-closeups/04.jpg" alt="" loading="lazy"><img src="../../assets/jack-barbour/facade-closeups/05.jpg" alt="" loading="lazy"><img src="../../assets/jack-barbour/facade-closeups/06.jpg" alt="" loading="lazy"><img src="../../assets/jack-barbour/facade-closeups/07.jpg" alt="" loading="lazy"><img src="../../assets/jack-barbour/facade-closeups/08.jpg" alt="" loading="lazy"><img src="../../assets/jack-barbour/facade-closeups/09.jpg" alt="" loading="lazy"><img src="../../assets/jack-barbour/facade-closeups/10.jpg" alt="" loading="lazy"><img src="../../assets/jack-barbour/facade-closeups/11.jpg" alt="" loading="lazy"><img src="../../assets/jack-barbour/facade-closeups/12.jpg" alt="" loading="lazy"></div>
+  
+  
+</div><div class="dataset">
+  <p>10 photographs of whole brick buildings with ground and sky</p>
+  <p class="muted small">Paragraph captions</p>
+  <div class="thumbs"><img src="../../assets/jack-barbour/brick-buildings/01.jpg" alt="" loading="lazy"><img src="../../assets/jack-barbour/brick-buildings/02.jpg" alt="" loading="lazy"><img src="../../assets/jack-barbour/brick-buildings/03.jpg" alt="" loading="lazy"><img src="../../assets/jack-barbour/brick-buildings/04.jpg" alt="" loading="lazy"><img src="../../assets/jack-barbour/brick-buildings/05.jpg" alt="" loading="lazy"><img src="../../assets/jack-barbour/brick-buildings/06.jpg" alt="" loading="lazy"><img src="../../assets/jack-barbour/brick-buildings/07.jpg" alt="" loading="lazy"><img src="../../assets/jack-barbour/brick-buildings/08.jpg" alt="" loading="lazy"><img src="../../assets/jack-barbour/brick-buildings/09.jpg" alt="" loading="lazy"><img src="../../assets/jack-barbour/brick-buildings/10.jpg" alt="" loading="lazy"></div>
+  <blockquote>This image shows a striking, contemporary building made almost entirely of reddish brick, designed with bold, geometric forms. The structure is composed of stacked, angular volumes that jut out in different directions, creating a sculptural, almost playful appearance. The brickwork includes perforations, allowing light and air to pass through, which softens the mass of the building.
+
+Bright yellow accents highlight…</blockquote><blockquote>This image shows a modern brick building with a highly ordered, repetitive facade that emphasizes depth and shadow.
+
+The upper portion is defined by a grid of horizontal concrete slabs paired with vertical brick fins or columns. These brick elements project outward at varying depths, creating a rhythmic pattern of light and shadow across the surface. The effect gives the facade a textured, almost woven appearance d…</blockquote>
+  <a class="small" href="../../assets/jack-barbour/brick-buildings-captions.txt">All 10 captions (.txt)</a>
+</div></section><section class="block"><h2 class="section-label mono">Try it</h2><div class="prompt"><p class="mono small">free standing building with parametric brick facade that girates, undulates, and makes complex geometric movements that seem to defy gravity. located in a grassy field, blue sky in the background, large windows in the building, cantilevers — both LoRAs at 1.2, 35 steps</p><button class="copy mono small" type="button">Copy</button></div></section></div>
+<nav class="wrap pager-bottom mono small"><a href="../itamar-yahav/">← pencil_drawing</a><a href="../jack-smith/">Crockett · Villette · Oudolf →</a></nav>
+<footer class="foot wrap">
+  <div>ARCH 507 — Generative AI: Thinking and Designing with Machine Intelligence<br>University of Michigan, Taubman College of Architecture and Urban Planning · Winter 2026</div>
+  <div>Instructor: Ishan Pal Singh</div>
+  <div class="foot-note">Student work shared for education and research. LoRAs are free for non-commercial use with credit to the student. Datasets built from other people's images are shown as captions and small thumbnails only.</div>
+</footer>
+<script src="../../site.js"></script>
+</body>
+</html>

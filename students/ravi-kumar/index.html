@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Amabuye — Ravi Kumar</title>
+<meta name="description" content="Rwanda&#x27;s volcanic stone, a material the base model reduces to a hut, carried into contemporary form.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../site.css">
+</head>
+<body>
+
+<header class="top wrap">
+  <a class="mono small" href="../../">← All projects</a>
+  <nav class="mono small pager"><a href="../michael-natinsky/">← Michael Natinsky</a><a href="../riley-montgomery/">Riley Montgomery →</a></nav>
+</header>
+<section class="p-hero wrap">
+  <p class="mono small muted">Ravi Kumar</p>
+  <h1>Amabuye</h1>
+  <p class="lede">Rwanda&#x27;s volcanic stone, a material the base model reduces to a hut, carried into contemporary form.</p>
+</section>
+<div class="p-cover wrap"><img src="../../assets/ravi-kumar/final/11.jpg" alt=""></div>
+<section class="p-body wrap">
+  <article class="prose"><p class="note">The volcanic stone dataset wasn't handed in; the stone LoRA itself is included.</p><h2>The question</h2>
+<p>Like historical archives, image models flatten non-Western histories. Asked about Rwandan architecture, they jump to generic East African huts. During a research fellowship in Kigali, Ravi saw how central basalt volcanic stone (<em>amabuye</em> in Kinyarwanda) is to Rwanda's buildings, from foundations to field boundaries. Ravi asked whether a LoRA could teach the model this material and then carry it into contemporary architecture.</p>
+<h2>What they did</h2>
+<ul>
+<li>Trained a material LoRA on the stone: its pores and its precise polygonal joints.</li>
+<li>Trained two facade LoRAs, one on line-art elevations and one on photographs of contemporary facades.</li>
+<li>Combined them in steps: material plus facade LoRA, then the material LoRA alone in context. Finally Ravi used the line-art LoRA to generate a composition, fed it in as a ControlNet, and applied the stone on top.</li>
+</ul>
+<h2>What they found</h2>
+<ul>
+<li>Scale was the hardest part. The model kept blowing individual stones up into facade-sized panels.</li>
+<li>It insisted on applying the stone the way buildings are usually made today, as hung cladding rather than solid, self-supporting masonry.</li>
+<li>Ravi was never fully satisfied with the images, but the process exposed how hard it is to shift a model's bias when the data it has is thin or marginalised.</li>
+</ul></article>
+  <aside><dl class="glance">
+  <div><dt>LoRAs</dt><dd>3</dd></div>
+  <div><dt>Base model</dt><dd>FLUX.1 [dev]</dd></div>
+  <div><dt>Trigger words</dt><dd><code>stoneybaloney</code>, <code>lineart architectural elevation</code></dd></div>
+  <div><dt>Final images</dt><dd>12</dd></div>
+</dl></aside>
+</section>
+<section class="block wrap"><h2 class="section-label mono">Final images</h2><div class="gallery"><a class="g-item" href="../../assets/ravi-kumar/final/01.jpg" data-w="2000" data-h="2000"><img src="../../assets/ravi-kumar/final/01_t.jpg" alt="Amabuye, image 1" loading="lazy" width="2000" height="2000"></a><a class="g-item" href="../../assets/ravi-kumar/final/02.jpg" data-w="720" data-h="720"><img src="../../assets/ravi-kumar/final/02_t.jpg" alt="Amabuye, image 2" loading="lazy" width="720" height="720"></a><a class="g-item" href="../../assets/ravi-kumar/final/03.jpg" data-w="720" data-h="720"><img src="../../assets/ravi-kumar/final/03_t.jpg" alt="Amabuye, image 3" loading="lazy" width="720" height="720"></a><a class="g-item" href="../../assets/ravi-kumar/final/04.jpg" data-w="1024" data-h="1024"><img src="../../assets/ravi-kumar/final/04_t.jpg" alt="Amabuye, image 4" loading="lazy" width="1024" height="1024"></a><a class="g-item" href="../../assets/ravi-kumar/final/05.jpg" data-w="2000" data-h="2000"><img src="../../assets/ravi-kumar/final/05_t.jpg" alt="Amabuye, image 5" loading="lazy" width="2000" height="2000"></a><a class="g-item" href="../../assets/ravi-kumar/final/06.jpg" data-w="1440" data-h="1440"><img src="../../assets/ravi-kumar/final/06_t.jpg" alt="Amabuye, image 6" loading="lazy" width="1440" height="1440"></a><a class="g-item" href="../../assets/ravi-kumar/final/07.jpg" data-w="1440" data-h="1440"><img src="../../assets/ravi-kumar/final/07_t.jpg" alt="Amabuye, image 7" loading="lazy" width="1440" height="1440"></a><a class="g-item" href="../../assets/ravi-kumar/final/08.jpg" data-w="1600" data-h="896"><img src="../../assets/ravi-kumar/final/08_t.jpg" alt="Amabuye, image 8" loading="lazy" width="1600" height="896"></a><a class="g-item" href="../../assets/ravi-kumar/final/09.jpg" data-w="1600" data-h="896"><img src="../../assets/ravi-kumar/final/09_t.jpg" alt="Amabuye, image 9" loading="lazy" width="1600" height="896"></a><a class="g-item" href="../../assets/ravi-kumar/final/10.jpg" data-w="2000" data-h="2000"><img src="../../assets/ravi-kumar/final/10_t.jpg" alt="Amabuye, image 10" loading="lazy" width="2000" height="2000"></a><a class="g-item" href="../../assets/ravi-kumar/final/11.jpg" data-w="2000" data-h="1133"><img src="../../assets/ravi-kumar/final/11_t.jpg" alt="Amabuye, image 11" loading="lazy" width="2000" height="1133"></a><a class="g-item" href="../../assets/ravi-kumar/final/12.jpg" data-w="2000" data-h="1133"><img src="../../assets/ravi-kumar/final/12_t.jpg" alt="Amabuye, image 12" loading="lazy" width="2000" height="1133"></a></div></section>
+<div class="wrap"><section class="block"><h2 class="section-label mono">LoRAs</h2><div class="loras"><div class="lora">
+  <div class="lora-head"><h3 class="mono">stoneybaloney</h3><span class="btn btn-off">Download soon</span></div>
+  <dl>
+    <div><dt>Trained on</dt><dd>Rwandan volcanic stone (amabuye) details: porosity, polygonal joinery</dd></div>
+    <div><dt>Trigger</dt><dd><code>stoneybaloney</code></dd></div>
+    <div><dt>Strength used</dt><dd><span class="muted">not stated</span></dd></div>
+    <div><dt>File</dt><dd class="mono small break">stoneybaloney.safetensors</dd></div>
+  </dl>
+</div><div class="lora">
+  <div class="lora-head"><h3 class="mono">katropalop</h3><span class="btn btn-off">Download soon</span></div>
+  <dl>
+    <div><dt>Trained on</dt><dd>Line-art elevations, white lines on black</dd></div>
+    <div><dt>Trigger</dt><dd><code>lineart architectural elevation</code></dd></div>
+    <div><dt>Strength used</dt><dd><span class="muted">not stated</span></dd></div>
+    <div><dt>File</dt><dd class="mono small break">katropalop.safetensors</dd></div>
+  </dl>
+</div><div class="lora">
+  <div class="lora-head"><h3 class="mono">wikiwikiwoo</h3><span class="btn btn-off">Download soon</span></div>
+  <dl>
+    <div><dt>Trained on</dt><dd>Straight-on photographs of contemporary facades</dd></div>
+    <div><dt>Trigger</dt><dd><span class="muted">none</span></dd></div>
+    <div><dt>Strength used</dt><dd><span class="muted">not stated</span></dd></div>
+    <div><dt>File</dt><dd class="mono small break">wikiwikiwoo.safetensors</dd></div>
+  </dl>
+</div></div></section><section class="block"><h2 class="section-label mono">Dataset</h2><div class="dataset">
+  <p>38 line-art elevations in the style of a ControlNet line drawing</p>
+  <p class="muted small">Detailed captions describing floors, openings and relief</p>
+  <div class="thumbs"><img src="../../assets/ravi-kumar/lineart-elevations/01.jpg" alt="" loading="lazy"><img src="../../assets/ravi-kumar/lineart-elevations/02.jpg" alt="" loading="lazy"><img src="../../assets/ravi-kumar/lineart-elevations/03.jpg" alt="" loading="lazy"><img src="../../assets/ravi-kumar/lineart-elevations/04.jpg" alt="" loading="lazy"><img src="../../assets/ravi-kumar/lineart-elevations/05.jpg" alt="" loading="lazy"><img src="../../assets/ravi-kumar/lineart-elevations/06.jpg" alt="" loading="lazy"><img src="../../assets/ravi-kumar/lineart-elevations/07.jpg" alt="" loading="lazy"><img src="../../assets/ravi-kumar/lineart-elevations/08.jpg" alt="" loading="lazy"><img src="../../assets/ravi-kumar/lineart-elevations/09.jpg" alt="" loading="lazy"><img src="../../assets/ravi-kumar/lineart-elevations/10.jpg" alt="" loading="lazy"><img src="../../assets/ravi-kumar/lineart-elevations/11.jpg" alt="" loading="lazy"><img src="../../assets/ravi-kumar/lineart-elevations/12.jpg" alt="" loading="lazy"></div>
+  <blockquote>lineart architectural elevation, white lines on black background, controlnet preprocessor style, full building facade visible, three-story institutional building, dense grid of square bays with faceted diamond-shaped relief panels, each bay defined by four angled triangular planes meeting at a central point, regular 3x3 module grid repeated across all floors, punched rectangular and square window openings recessed wi…</blockquote><blockquote>lineart architectural elevation, white lines on black background, controlnet preprocessor style, full building facade visible, tall multi-story residential building, continuous horizontal balcony bands repeating across five floors, full-width floor-to-ceiling glazing behind each balcony, fine vertical curtain panel lines running floor to ceiling within each glazed bay, thin horizontal slab edge lines dividing each fl…</blockquote>
+  <a class="small" href="../../assets/ravi-kumar/lineart-elevations-captions.txt">All 38 captions (.txt)</a>
+</div><div class="dataset">
+  <p>41 straight-on photographs of contemporary facades</p>
+  <p class="muted small">Detailed captions describing structure and cladding</p>
+  <div class="thumbs"><img src="../../assets/ravi-kumar/elevation-photos/01.jpg" alt="" loading="lazy"><img src="../../assets/ravi-kumar/elevation-photos/02.jpg" alt="" loading="lazy"><img src="../../assets/ravi-kumar/elevation-photos/03.jpg" alt="" loading="lazy"><img src="../../assets/ravi-kumar/elevation-photos/04.jpg" alt="" loading="lazy"><img src="../../assets/ravi-kumar/elevation-photos/05.jpg" alt="" loading="lazy"><img src="../../assets/ravi-kumar/elevation-photos/06.jpg" alt="" loading="lazy"><img src="../../assets/ravi-kumar/elevation-photos/07.jpg" alt="" loading="lazy"><img src="../../assets/ravi-kumar/elevation-photos/08.jpg" alt="" loading="lazy"><img src="../../assets/ravi-kumar/elevation-photos/09.jpg" alt="" loading="lazy"><img src="../../assets/ravi-kumar/elevation-photos/10.jpg" alt="" loading="lazy"><img src="../../assets/ravi-kumar/elevation-photos/11.jpg" alt="" loading="lazy"><img src="../../assets/ravi-kumar/elevation-photos/12.jpg" alt="" loading="lazy"></div>
+  <blockquote>A straight-on elevation photograph of a multi-story contemporary residential or mixed-use building facade, composed around a concrete structural frame with infill panels of pivoting and sliding perforated screens. The primary facade material is a warm golden-orange perforated metal or terracotta mesh panel system, subdivided into large floor-height bays by the exposed concrete frame. The concrete is light grey and fo…</blockquote><blockquote>A straight-on elevation photograph of a two-story contemporary light industrial or institutional building clad entirely in corrugated metal sheeting. The facade is symmetrical and flat, with no projecting elements. The cladding material is a vertically ribbed, corrugated steel or aluminum panel in a bright silver-white tone, covering the full facade from ground to roofline without interruption. The panel joints are v…</blockquote>
+  <a class="small" href="../../assets/ravi-kumar/elevation-photos-captions.txt">All 41 captions (.txt)</a>
+</div></section><section class="block"><h2 class="section-label mono">Try it</h2><div class="prompt"><p class="mono small">Material LoRA + facade LoRA + text prompt; later a LoRA-generated ControlNet + material LoRA</p><button class="copy mono small" type="button">Copy</button></div></section></div>
+<nav class="wrap pager-bottom mono small"><a href="../michael-natinsky/">← AI as a Drawing Tool</a><a href="../riley-montgomery/">Upper Peninsula Understory Futures →</a></nav>
+<footer class="foot wrap">
+  <div>ARCH 507 — Generative AI: Thinking and Designing with Machine Intelligence<br>University of Michigan, Taubman College of Architecture and Urban Planning · Winter 2026</div>
+  <div>Instructor: Ishan Pal Singh</div>
+  <div class="foot-note">Student work shared for education and research. LoRAs are free for non-commercial use with credit to the student. Datasets built from other people's images are shown as captions and small thumbnails only.</div>
+</footer>
+<script src="../../site.js"></script>
+</body>
+</html>
