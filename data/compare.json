@@ -1,0 +1,383 @@
+{
+ "prompt": "an architecture magazine photo of an apartment inside the ruins of a park in central portland, designed in the style of peter zumthor and kengo kuma, with lots of concrete walls and cut-throughs to weathered stone structures. people are sitting at tables on an outdoor terrace overlooking the ocean.",
+ "sets": [
+  {
+   "key": "strength-1",
+   "title": "every LoRA at 1.0",
+   "settings": "FLUX.1 [dev] fp8 · seed 507507 · 28 steps · guidance 3.5 · euler / simple · 1344×768 · every LoRA at 1.0",
+   "items": [
+    {
+     "file": "00",
+     "slug": "",
+     "name": "FLUX.1 [dev]",
+     "lora": "no LoRA",
+     "strength": null
+    },
+    {
+     "file": "01",
+     "slug": "angelica-facey",
+     "name": "Angelica Facey",
+     "lora": "C_at_el",
+     "strength": 1.0
+    },
+    {
+     "file": "02",
+     "slug": "angelica-facey",
+     "name": "Angelica Facey",
+     "lora": "YO_c_me_T",
+     "strength": 1.0
+    },
+    {
+     "file": "03",
+     "slug": "arushi-chopra",
+     "name": "Arushi Chopra",
+     "lora": "borsch_t",
+     "strength": 1.0
+    },
+    {
+     "file": "04",
+     "slug": "arushi-chopra",
+     "name": "Arushi Chopra",
+     "lora": "too_late",
+     "strength": 1.0
+    },
+    {
+     "file": "05",
+     "slug": "emily-naumann",
+     "name": "Emily Naumann",
+     "lora": "hoos",
+     "strength": 1.0
+    },
+    {
+     "file": "06",
+     "slug": "emily-naumann",
+     "name": "Emily Naumann",
+     "lora": "disasterpiece",
+     "strength": 1.0
+    },
+    {
+     "file": "07",
+     "slug": "emily-naumann",
+     "name": "Emily Naumann",
+     "lora": "minm",
+     "strength": 1.0
+    },
+    {
+     "file": "08",
+     "slug": "hua-lin",
+     "name": "Hua Lin (Dylan)",
+     "lora": "Justdoit",
+     "strength": 1.0
+    },
+    {
+     "file": "09",
+     "slug": "itamar-yahav",
+     "name": "Itamar Yahav",
+     "lora": "pencil_drawing",
+     "strength": 1.0
+    },
+    {
+     "file": "10",
+     "slug": "itamar-yahav",
+     "name": "Itamar Yahav",
+     "lora": "peptides (first try)",
+     "strength": 1.0
+    },
+    {
+     "file": "11",
+     "slug": "jack-barbour",
+     "name": "Jack Barbour",
+     "lora": "Brick buildings",
+     "strength": 1.0
+    },
+    {
+     "file": "12",
+     "slug": "jack-barbour",
+     "name": "Jack Barbour",
+     "lora": "Brick facade close-ups",
+     "strength": 1.0
+    },
+    {
+     "file": "13",
+     "slug": "leo-georges",
+     "name": "Leo Georges",
+     "lora": "Mullions",
+     "strength": 1.0
+    },
+    {
+     "file": "14",
+     "slug": "leo-georges",
+     "name": "Leo Georges",
+     "lora": "Dunes",
+     "strength": 1.0
+    },
+    {
+     "file": "15",
+     "slug": "michael-natinsky",
+     "name": "Michael Natinsky",
+     "lora": "Patelski",
+     "strength": 1.0
+    },
+    {
+     "file": "16",
+     "slug": "michael-natinsky",
+     "name": "Michael Natinsky",
+     "lora": "Elevations",
+     "strength": 1.0
+    },
+    {
+     "file": "17",
+     "slug": "ravi-kumar",
+     "name": "Ravi Kumar",
+     "lora": "stoneybaloney",
+     "strength": 1.0
+    },
+    {
+     "file": "18",
+     "slug": "ravi-kumar",
+     "name": "Ravi Kumar",
+     "lora": "katropalop",
+     "strength": 1.0
+    },
+    {
+     "file": "19",
+     "slug": "ravi-kumar",
+     "name": "Ravi Kumar",
+     "lora": "wikiwikiwoo",
+     "strength": 1.0
+    },
+    {
+     "file": "20",
+     "slug": "riley-montgomery",
+     "name": "Riley Montgomery",
+     "lora": "mont2",
+     "strength": 1.0
+    },
+    {
+     "file": "21",
+     "slug": "riley-montgomery",
+     "name": "Riley Montgomery",
+     "lora": "lkjh",
+     "strength": 1.0
+    },
+    {
+     "file": "22",
+     "slug": "riley-montgomery",
+     "name": "Riley Montgomery",
+     "lora": "mont3",
+     "strength": 1.0
+    },
+    {
+     "file": "23",
+     "slug": "tamer-tubishat",
+     "name": "Tamer Tubishat",
+     "lora": "architamer",
+     "strength": 1.0
+    },
+    {
+     "file": "24",
+     "slug": "yewon-seo",
+     "name": "Yewon Seo",
+     "lora": "asdf (style)",
+     "strength": 1.0
+    },
+    {
+     "file": "25",
+     "slug": "yewon-seo",
+     "name": "Yewon Seo",
+     "lora": "qwer (form)",
+     "strength": 1.0
+    }
+   ]
+  },
+  {
+   "key": "recommended",
+   "title": "at each student's strength",
+   "settings": "FLUX.1 [dev] fp8 · seed 507507 · 28 steps · guidance 3.5 · euler / simple · 1344×768 · each LoRA at its student's recommended strength (middle of their range)",
+   "items": [
+    {
+     "file": "00",
+     "slug": "",
+     "name": "FLUX.1 [dev]",
+     "lora": "no LoRA",
+     "strength": null
+    },
+    {
+     "file": "01",
+     "slug": "angelica-facey",
+     "name": "Angelica Facey",
+     "lora": "C_at_el",
+     "strength": 1.0
+    },
+    {
+     "file": "02",
+     "slug": "angelica-facey",
+     "name": "Angelica Facey",
+     "lora": "YO_c_me_T",
+     "strength": 0.75
+    },
+    {
+     "file": "03",
+     "slug": "arushi-chopra",
+     "name": "Arushi Chopra",
+     "lora": "borsch_t",
+     "strength": 1.6
+    },
+    {
+     "file": "04",
+     "slug": "arushi-chopra",
+     "name": "Arushi Chopra",
+     "lora": "too_late",
+     "strength": 1.4
+    },
+    {
+     "file": "05",
+     "slug": "emily-naumann",
+     "name": "Emily Naumann",
+     "lora": "hoos",
+     "strength": 1.6
+    },
+    {
+     "file": "06",
+     "slug": "emily-naumann",
+     "name": "Emily Naumann",
+     "lora": "disasterpiece",
+     "strength": 1.6
+    },
+    {
+     "file": "07",
+     "slug": "emily-naumann",
+     "name": "Emily Naumann",
+     "lora": "minm",
+     "strength": 1.25
+    },
+    {
+     "file": "08",
+     "slug": "hua-lin",
+     "name": "Hua Lin (Dylan)",
+     "lora": "Justdoit",
+     "strength": 1.0
+    },
+    {
+     "file": "09",
+     "slug": "itamar-yahav",
+     "name": "Itamar Yahav",
+     "lora": "pencil_drawing",
+     "strength": 1.0
+    },
+    {
+     "file": "10",
+     "slug": "itamar-yahav",
+     "name": "Itamar Yahav",
+     "lora": "peptides (first try)",
+     "strength": 1.0
+    },
+    {
+     "file": "11",
+     "slug": "jack-barbour",
+     "name": "Jack Barbour",
+     "lora": "Brick buildings",
+     "strength": 1.2
+    },
+    {
+     "file": "12",
+     "slug": "jack-barbour",
+     "name": "Jack Barbour",
+     "lora": "Brick facade close-ups",
+     "strength": 1.2
+    },
+    {
+     "file": "13",
+     "slug": "leo-georges",
+     "name": "Leo Georges",
+     "lora": "Mullions",
+     "strength": 0.75
+    },
+    {
+     "file": "14",
+     "slug": "leo-georges",
+     "name": "Leo Georges",
+     "lora": "Dunes",
+     "strength": 0.75
+    },
+    {
+     "file": "15",
+     "slug": "michael-natinsky",
+     "name": "Michael Natinsky",
+     "lora": "Patelski",
+     "strength": 1.0
+    },
+    {
+     "file": "16",
+     "slug": "michael-natinsky",
+     "name": "Michael Natinsky",
+     "lora": "Elevations",
+     "strength": 1.0
+    },
+    {
+     "file": "17",
+     "slug": "ravi-kumar",
+     "name": "Ravi Kumar",
+     "lora": "stoneybaloney",
+     "strength": 1.0
+    },
+    {
+     "file": "18",
+     "slug": "ravi-kumar",
+     "name": "Ravi Kumar",
+     "lora": "katropalop",
+     "strength": 1.0
+    },
+    {
+     "file": "19",
+     "slug": "ravi-kumar",
+     "name": "Ravi Kumar",
+     "lora": "wikiwikiwoo",
+     "strength": 1.0
+    },
+    {
+     "file": "20",
+     "slug": "riley-montgomery",
+     "name": "Riley Montgomery",
+     "lora": "mont2",
+     "strength": 0.9
+    },
+    {
+     "file": "21",
+     "slug": "riley-montgomery",
+     "name": "Riley Montgomery",
+     "lora": "lkjh",
+     "strength": 0.9
+    },
+    {
+     "file": "22",
+     "slug": "riley-montgomery",
+     "name": "Riley Montgomery",
+     "lora": "mont3",
+     "strength": 0.75
+    },
+    {
+     "file": "23",
+     "slug": "tamer-tubishat",
+     "name": "Tamer Tubishat",
+     "lora": "architamer",
+     "strength": 1.0
+    },
+    {
+     "file": "24",
+     "slug": "yewon-seo",
+     "name": "Yewon Seo",
+     "lora": "asdf (style)",
+     "strength": 1.6
+    },
+    {
+     "file": "25",
+     "slug": "yewon-seo",
+     "name": "Yewon Seo",
+     "lora": "qwer (form)",
+     "strength": 1.0
+    }
+   ]
+  }
+ ]
+}

@@ -97,6 +97,53 @@ def cover_of(s):
     return want if any(f["file"] == want for f in finals) else (finals[0]["file"] if finals else None)
 
 
+def method_block():
+    """Collapsible Methodology from content/methodology.md, shown under the course intro."""
+    path = CONTENT / "methodology.md"
+    if not path.exists():
+        return ""
+    return (f'<details class="method" id="methodology"><summary class="mono">Methodology</summary>'
+            f'<div class="method-body">{md(path.read_text("utf-8"))}</div></details>')
+
+
+def compare_section():
+    """'One prompt, every LoRA' grid(s) from data/compare.json (written by tools/prepare_compare.py)."""
+    path = ROOT / "data" / "compare.json"
+    if not path.exists():
+        return ""
+    c = json.loads(path.read_text("utf-8"))
+    sets = c["sets"]
+    tabs = ""
+    if len(sets) > 1:
+        tabs = '<div class="cmp-tabs" role="tablist">' + "".join(
+            f'<button class="cmp-tab" type="button" role="tab" data-set="{st["key"]}" aria-selected="{"true" if i == 0 else "false"}">{E(st["title"])}</button>'
+            for i, st in enumerate(sets)) + "</div>"
+    blocks = []
+    for i, st in enumerate(sets):
+        k = st["key"]
+        tiles = []
+        for it in st["items"]:
+            if it["slug"]:
+                who = f'<a href="students/{it["slug"]}/">{E(it["name"])}</a>'
+                what = f'{E(it["lora"])} · {it["strength"]:g}'
+            else:
+                who, what = '<span class="cmp-base">Base model</span>', "FLUX.1 [dev], no LoRA"
+            alt = f'{it["name"]}, {it["lora"]}'
+            tiles.append(f'<figure class="cmp-item"><a class="g-item" href="assets/compare/{k}/{it["file"]}.jpg">'
+                         f'<img src="assets/compare/{k}/{it["file"]}_t.jpg" alt="{E(alt)}" loading="lazy" width="672" height="384"></a>'
+                         f'<figcaption>{who}<span class="mono small muted">{what}</span></figcaption></figure>')
+        blocks.append(f'<div class="cmp-set lb-group" data-set="{k}"{" hidden" if i else ""}>'
+                      f'<p class="mono small muted cmp-settings">{E(st["settings"])} · <a href="assets/compare/{k}/sheet.jpg">contact sheet (JPG)</a></p>'
+                      f'<div class="cmp-grid">{"".join(tiles)}</div></div>')
+    rec = " Two versions: every LoRA at 1.0, and each at the strength its student recommended (the middle of their range)." if len(sets) > 1 else ""
+    return f"""<section class="wrap compare" id="compare">
+  <h2 class="section-label mono">One prompt, every LoRA</h2>
+  <div class="prose"><p>One prompt, run through plain FLUX.1 [dev] and then through each of the {len(sets[0]["items"]) - 1} LoRAs, with the same seed and settings and each LoRA's trigger word added. It shows what each dataset pushes into the model on its own.{rec}</p></div>
+  <div class="prompt"><p class="mono small">{E(c["prompt"])}</p><button class="copy mono small" type="button">Copy</button></div>
+  {tabs}{"".join(blocks)}
+</section>"""
+
+
 def build_index(course, course_body, students):
     n_lora = sum(len(s["lora"]) for s in students)
     cards = []
@@ -118,7 +165,7 @@ def build_index(course, course_body, students):
   <p class="lede">{E(course['course'])}</p>
 </section>
 <section class="intro wrap">
-  <div class="prose">{md(course_body)}</div>
+  <div class="prose">{md(course_body)}{method_block()}</div>
   <dl class="stats">
     <div><dt>Projects</dt><dd>{len(students)}</dd></div>
     <div><dt>LoRAs</dt><dd>{n_lora}</dd></div>
@@ -129,6 +176,7 @@ def build_index(course, course_body, students):
   <h2 class="section-label mono">Projects</h2>
   <div class="grid">{''.join(cards)}</div>
 </section>
+{compare_section()}
 <section class="wrap about">
   <h2 class="section-label mono">About the course</h2>
   <div class="about-cols">{md((CONTENT / "about.md").read_text("utf-8"))}</div>
