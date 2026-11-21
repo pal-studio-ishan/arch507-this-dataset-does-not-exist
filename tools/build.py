@@ -153,6 +153,8 @@ def lora_block(s):
         file, name, trained, trigger, strength = parts[:5]
         url = DOWNLOADS.get(file)
         btn = (f'<a class="btn" href="{E(url)}">Download</a>' if url else '<span class="btn btn-off">Download soon</span>')
+        page = url.split("/resolve/")[0] if url else ""
+        file = url.split("/resolve/main/")[1].split("?")[0] if url else file  # show the name it has on Hugging Face
         rows.append(f"""<div class="lora">
   <div class="lora-head"><h3 class="mono">{E(name)}</h3>{btn}</div>
   <dl>
@@ -161,6 +163,7 @@ def lora_block(s):
     <div><dt>Strength used</dt><dd>{E(strength) if strength and strength != '—' else '<span class="muted">not stated</span>'}</dd></div>
     <div><dt>File</dt><dd class="mono small break">{E(file)}</dd></div>
   </dl>
+  {f'<a class="hf-link small" href="{E(page)}">Model page on Hugging Face →</a>' if page else ''}
 </div>""")
     return f'<section class="block"><h2 class="section-label mono">LoRAs</h2><div class="loras">{"".join(rows)}</div></section>'
 
