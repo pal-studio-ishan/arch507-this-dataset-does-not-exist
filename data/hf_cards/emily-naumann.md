@@ -62,7 +62,7 @@ Popular models make sleek, futuristic images that read as AI right away and ofte
 
 - Base model: **FLUX.1 [dev]**. These LoRAs don't work with SDXL.
 - ComfyUI: put the file in `models/loras` and load it with *LoraLoaderModelOnly* after the Flux model. Start at the strength listed above.
-- diffusers: `pipe.load_lora_weights("pal13/arch507-emily-naumann-le-zine", weight_name="emily-naumann_hoos.safetensors")`
+- diffusers: `pipe.load_lora_weights("pal-studio/arch507-emily-naumann-le-zine", weight_name="emily-naumann_hoos.safetensors")`
 
 Example prompt from the student's tests:
 

@@ -64,7 +64,7 @@ Can one LoRA carry a *style* and another a *form*, and can mixing them render a 
 
 - Base model: **FLUX.1 [dev]**. These LoRAs don't work with SDXL.
 - ComfyUI: put the file in `models/loras` and load it with *LoraLoaderModelOnly* after the Flux model. Start at the strength listed above.
-- diffusers: `pipe.load_lora_weights("pal13/arch507-yewon-seo-render-a-lamp", weight_name="yewon-seo_asdf-style.safetensors")`
+- diffusers: `pipe.load_lora_weights("pal-studio/arch507-yewon-seo-render-a-lamp", weight_name="yewon-seo_asdf-style.safetensors")`
 
 Example prompt from the student's tests:
 

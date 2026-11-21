@@ -61,7 +61,7 @@ Base models read landscape as surface: texture, colour, material. When you ask f
 
 - Base model: **FLUX.1 [dev]**. These LoRAs don't work with SDXL.
 - ComfyUI: put the file in `models/loras` and load it with *LoraLoaderModelOnly* after the Flux model. Start at the strength listed above.
-- diffusers: `pipe.load_lora_weights("pal13/arch507-leo-georges-sand", weight_name="leo-georges_mullions.safetensors")`
+- diffusers: `pipe.load_lora_weights("pal-studio/arch507-leo-georges-sand", weight_name="leo-georges_mullions.safetensors")`
 
 Example prompt from the student's tests:
 

@@ -60,7 +60,7 @@ Ask a mainstream model for "a parametric brick facade" and you get bricks that a
 
 - Base model: **FLUX.1 [dev]**. These LoRAs don't work with SDXL.
 - ComfyUI: put the file in `models/loras` and load it with *LoraLoaderModelOnly* after the Flux model. Start at the strength listed above.
-- diffusers: `pipe.load_lora_weights("pal13/arch507-jack-barbour-future-facades", weight_name="jack-barbour_brick-buildings.safetensors")`
+- diffusers: `pipe.load_lora_weights("pal-studio/arch507-jack-barbour-future-facades", weight_name="jack-barbour_brick-buildings.safetensors")`
 
 Example prompt from the student's tests:
 

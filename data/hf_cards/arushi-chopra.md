@@ -63,7 +63,7 @@ Base models can draw "a bamboo building" but not how bamboo actually goes togeth
 
 - Base model: **FLUX.1 [dev]**. These LoRAs don't work with SDXL.
 - ComfyUI: put the file in `models/loras` and load it with *LoraLoaderModelOnly* after the Flux model. Start at the strength listed above.
-- diffusers: `pipe.load_lora_weights("pal13/arch507-arushi-chopra-bambu", weight_name="arushi-chopra_borsch_t.safetensors")`
+- diffusers: `pipe.load_lora_weights("pal-studio/arch507-arushi-chopra-bambu", weight_name="arushi-chopra_borsch_t.safetensors")`
 
 Example prompt from the student's tests:
 

@@ -16,7 +16,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from build import parse, CONTENT, ROOT, ASSETS  # noqa: E402
 
-USER = "pal13"
+USER = "pal-studio"
 COLLECTION_TITLE = "ARCH 507 — This Dataset Does Not Exist"
 SITE = "https://pal-studio-ishan.github.io/arch507-this-dataset-does-not-exist/"
 SRC = Path(r"C:\Users\ishanpal\University of Michigan Dropbox\Ishan Pal Singh\TEACHING\ARCH 507 - GenAI\Assignments\Student Work")

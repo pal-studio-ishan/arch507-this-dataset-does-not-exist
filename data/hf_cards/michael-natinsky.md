@@ -61,7 +61,7 @@ Could AI be a real design tool for elevations, generating facade patterns and co
 
 - Base model: **FLUX.1 [dev]**. These LoRAs don't work with SDXL.
 - ComfyUI: put the file in `models/loras` and load it with *LoraLoaderModelOnly* after the Flux model. Start at the strength listed above.
-- diffusers: `pipe.load_lora_weights("pal13/arch507-michael-natinsky-ai-as-a-drawing-tool", weight_name="michael-natinsky_patelski.safetensors")`
+- diffusers: `pipe.load_lora_weights("pal-studio/arch507-michael-natinsky-ai-as-a-drawing-tool", weight_name="michael-natinsky_patelski.safetensors")`
 
 Example prompt from the student's tests:
 

@@ -61,7 +61,7 @@ Models like Flux chase perfect, high-resolution realism. What gets lost is imper
 
 - Base model: **FLUX.1 [dev]**. These LoRAs don't work with SDXL.
 - ComfyUI: put the file in `models/loras` and load it with *LoraLoaderModelOnly* after the Flux model. Start at the strength listed above.
-- diffusers: `pipe.load_lora_weights("pal13/arch507-angelica-facey-memory", weight_name="angelica-facey_C_at_el.safetensors")`
+- diffusers: `pipe.load_lora_weights("pal-studio/arch507-angelica-facey-memory", weight_name="angelica-facey_C_at_el.safetensors")`
 
 Example prompt from the student's tests:
 

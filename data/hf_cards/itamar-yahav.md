@@ -61,7 +61,7 @@ Itamar first wanted a LoRA that could turn any Rhino model into a render in the 
 
 - Base model: **FLUX.1 [dev]**. These LoRAs don't work with SDXL.
 - ComfyUI: put the file in `models/loras` and load it with *LoraLoaderModelOnly* after the Flux model. Start at the strength listed above.
-- diffusers: `pipe.load_lora_weights("pal13/arch507-itamar-yahav-pencil-drawing", weight_name="itamar-yahav_pencil_drawing.safetensors")`
+- diffusers: `pipe.load_lora_weights("pal-studio/arch507-itamar-yahav-pencil-drawing", weight_name="itamar-yahav_pencil_drawing.safetensors")`
 
 Example prompt from the student's tests:
 

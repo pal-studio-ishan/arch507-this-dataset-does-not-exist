@@ -60,7 +60,7 @@ Generative models get their power from breadth, and that breadth comes from aver
 
 - Base model: **FLUX.1 [dev]**. These LoRAs don't work with SDXL.
 - ComfyUI: put the file in `models/loras` and load it with *LoraLoaderModelOnly* after the Flux model. Start at the strength listed above.
-- diffusers: `pipe.load_lora_weights("pal13/arch507-tamer-tubishat-lithic-hospitality", weight_name="tamer-tubishat_architamer.safetensors")`
+- diffusers: `pipe.load_lora_weights("pal-studio/arch507-tamer-tubishat-lithic-hospitality", weight_name="tamer-tubishat_architamer.safetensors")`
 
 Example prompt from the student's tests:
 
