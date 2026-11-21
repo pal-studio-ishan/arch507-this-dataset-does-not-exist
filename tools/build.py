@@ -129,6 +129,10 @@ def build_index(course, course_body, students):
   <h2 class="section-label mono">Projects</h2>
   <div class="grid">{''.join(cards)}</div>
 </section>
+<section class="wrap about">
+  <h2 class="section-label mono">About the course</h2>
+  <div class="about-cols">{md((CONTENT / "about.md").read_text("utf-8"))}</div>
+</section>
 <section class="wrap howto">
   <h2 class="section-label mono">Using the LoRAs</h2>
   <div class="howto-cols">

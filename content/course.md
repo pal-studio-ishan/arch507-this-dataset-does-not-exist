@@ -5,8 +5,10 @@ term: Winter 2026
 school: University of Michigan, Taubman College of Architecture and Urban Planning
 instructor: Ishan Pal Singh
 ---
-Image models are trained on the internet's average. They know the familiar version of almost everything and very little about the specific: one city's stone, one photographer's grain, a hand-drawn way of seeing.
+The most celebrated image models can seem to make almost anything. That breadth is not neutral. It comes from averaging. Models compress huge amounts of visual culture into statistical tendencies, so what is common and repeated becomes easy to make, while specific materials, places, aesthetics and cultural references get flattened, misrepresented or left out.
 
-In this assignment each student found something the base model could not make. It could be a material, a place, a drawing style or a mood. They built a small dataset for it, wrote captions for every image, trained their own LoRA on **FLUX.1 [dev]**, and made a series of twelve images with it. The dataset didn't exist until they made it.
+This assignment started from the opposite position. Each student built their own dataset and trained a LoRA on **FLUX.1 [dev]** to *insert a new bias* into the model: a material, a formal logic, a way of drawing, or a place the base model didn't hold with enough force or specificity. Then they made twelve images that work as a sequence, showing the world their intervention opens up.
 
-Each project page below says what the student set out to test, what they built, and what they found, often including what failed. The LoRAs are free to download and use.
+The point wasn't only to prove a model could be trained. It was to ask why this dataset needed to exist. What did the model fail to show? What were they trying to recover, exaggerate or invent? And once the new data was in, what changed?
+
+Each project page sums up what the student set out to test, what they built and what they found, often including what failed. The LoRAs are free to download and use.

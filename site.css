@@ -54,6 +54,13 @@ code { font: 0.88em var(--mono); background: var(--panel); border: 1px solid var
 .card p { margin: 0; font-size: 14px; line-height: 1.5; }
 .chip { font: 11px var(--mono); color: var(--muted); border: 1px solid var(--line); padding: 2px 8px; border-radius: 99px; white-space: nowrap; }
 
+.about { padding-bottom: 72px; }
+.about-cols { columns: 2 380px; column-gap: 56px; }
+.about-cols h2 { font: 600 16px var(--sans); margin: 0 0 8px; break-after: avoid; }
+.about-cols ul, .about-cols ol { margin: 0 0 28px; padding-left: 20px; break-inside: avoid; }
+.about-cols p { margin: 0 0 28px; break-inside: avoid; }
+.about-cols li, .about-cols p { color: #cfcfcf; font-size: 15px; }
+.about-cols li { margin: 4px 0; }
 .howto { padding-bottom: 72px; }
 .howto-cols { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
 .howto h3 { font-size: 16px; font-weight: 600; margin: 0 0 6px; }
